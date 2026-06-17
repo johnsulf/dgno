@@ -2,6 +2,7 @@
 const nextConfig = {
   reactStrictMode: true,
   output: "export",
+  basePath: "/dgno",
   images: { unoptimized: true },
 };
 

@@ -32,7 +32,8 @@ export default function HeatmapTable() {
 
   useEffect(() => {
     let alive = true;
-    fetch("/data/players.json")
+    const base = process.env.NEXT_PUBLIC_BASE_PATH || "";
+    fetch(`${base}/data/players.json`)
       .then((r) => r.json())
       .then((d: PlayersData) => {
         if (alive) setData(d);
