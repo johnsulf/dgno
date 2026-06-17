@@ -1,0 +1,164 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme {
+  --color-ink: #0c1a1d;
+  --color-panel: #102528;
+  --color-panel2: #0e2024;
+  --color-line: #1d3a3e;
+  --color-line2: #24474c;
+  --color-text: #e9f1ec;
+  --color-muted: #83a8a1;
+  --color-muted2: #8aaca6;
+  --color-teal: #2bb6a8;
+  --color-amber: #f4b942;
+  --color-hot: #ff6a3d;
+  --color-brass: #f2a93b;
+
+  --font-sans: "Inter", system-ui, sans-serif;
+  --font-display: "Space Grotesk", sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+
+  --radius-lg: 0.75rem;
+  --radius-md: 0.625rem;
+  --radius-sm: 0.5rem;
+}
+
+/* Base styles */
+body {
+  @apply bg-ink text-text font-sans leading-relaxed;
+  background-image: radial-gradient(1200px 600px at 78% -8%, rgba(43,182,168,.10), transparent 60%),
+                    radial-gradient(900px 500px at 5% 4%, rgba(242,169,59,.06), transparent 55%);
+}
+
+/* ========== Layout ========== */
+.wrap { @apply max-w-295 mx-auto px-5.5; }
+
+/* ========== Hero ========== */
+.eyebrow { @apply font-mono text-xs tracking-[.22em] uppercase text-teal font-medium; }
+h1 { @apply font-display font-bold tracking-tight text-[clamp(30px,5.5vw,58px)] leading-none mt-[.35em] mb-[.25em]; }
+h1 .hl { @apply text-brass; }
+.lede { @apply text-muted max-w-[64ch] text-[clamp(15px,1.6vw,17px)] m-0; }
+header.hero { @apply pt-13.5 pb-2; }
+
+/* ========== Chart card ========== */
+.chartcard { @apply mt-7.5 bg-linear-to-b from-panel to-panel2 border border-line rounded-2xl p-5 pb-3 relative overflow-hidden; }
+.chartcard h2 { @apply font-display text-sm font-semibold tracking-wide m-0 mb-0.5; }
+.chartcard .sub { @apply text-muted2 text-[12.5px] m-0 mb-1.5 font-mono; }
+svg { @apply block w-full h-auto; }
+.chart-container { @apply relative overflow-visible; }
+.gridline { stroke: var(--color-line); stroke-width: 1; }
+.axis-label { fill: var(--color-muted); font-family: var(--font-mono); font-size: 11px; }
+.area { fill: url(#grad); }
+.aline { fill: none; stroke: var(--color-brass); stroke-width: 2.4; stroke-linejoin: round; }
+.dot { fill: var(--color-hot); }
+.anno { fill: var(--color-text); font-family: var(--font-sans); font-size: 12.5px; font-weight: 600; }
+
+/* ========== Chart tooltip ========== */
+.chart-tooltip {
+  @apply absolute pointer-events-none z-10 bg-panel border border-line rounded-lg px-3.5 py-2.5 text-[12px] leading-relaxed;
+  top: 0;
+  transform: translateX(-50%);
+  min-width: 180px;
+  box-shadow: 0 8px 24px rgba(0,0,0,.4);
+}
+.chart-tooltip-year { @apply font-display font-bold text-sm text-text mb-1; }
+.chart-tooltip-row { @apply flex justify-between gap-4 text-muted; }
+.chart-tooltip-row strong { @apply text-text font-semibold; }
+.chart-tooltip-top5 { @apply mt-1.5 pt-1.5 border-t border-line; }
+.chart-tooltip-player { @apply flex justify-between gap-3 text-muted2 text-[11px] leading-snug py-px; }
+.chart-tooltip-player span:last-child { @apply font-mono font-semibold text-text; }
+
+/* ========== Stat strip ========== */
+.stats { @apply grid grid-cols-4 gap-3.5 mt-7 mb-1.5; }
+.stat { @apply bg-panel border border-line rounded-[14px] px-4.5 py-4; }
+.stat .n { @apply font-display font-bold text-[clamp(22px,3vw,30px)] tracking-tight leading-none; }
+.stat .n.amber { @apply text-brass; }
+.stat .n.teal { @apply text-teal; }
+.stat .l { @apply text-muted text-[12.5px] mt-1.75; }
+.stat .l b { @apply text-text font-semibold; }
+
+/* ========== Sections ========== */
+section { @apply pt-10; }
+.sec-head { @apply flex items-baseline gap-3.5 flex-wrap mb-4; }
+.sec-head h2 { @apply font-display font-semibold text-[clamp(19px,2.4vw,24px)] tracking-tight m-0; }
+.sec-head .note { @apply text-muted2 text-[13px] font-mono; }
+
+/* ========== Top bars ========== */
+.bars { @apply flex flex-col gap-1.75 list-none p-0 m-0; }
+.bar { @apply grid grid-cols-[30px_1fr] gap-3 items-center; }
+.bar .rk { @apply font-mono text-muted2 text-xs text-right; }
+.bar .track { @apply relative bg-panel border border-line rounded-lg h-8.5 overflow-hidden; }
+.bar .fill { @apply absolute inset-y-0 left-0 rounded-l-lg; background: linear-gradient(90deg, rgba(43,182,168,.5), var(--color-brass)); }
+.bar .lab { @apply absolute inset-0 flex items-center justify-between px-3 text-[13.5px]; }
+.bar .lab .nm { @apply font-semibold z-1; text-shadow: 0 1px 2px rgba(0,0,0,.45); }
+.bar .lab .nm small { @apply text-muted font-normal font-mono text-[11px] ml-2; }
+.bar .lab .nm a:focus-visible, .nmcell .nm a:focus-visible { @apply outline-2 outline-offset-2 outline-teal rounded-sm; }
+.bar .lab .v { @apply font-mono font-bold z-1; text-shadow: 0 1px 2px rgba(0,0,0,.45); }
+.bar .lab .nm a, .nmcell .nm a { @apply text-inherit no-underline; }
+.bar .lab .nm a:hover, .nmcell .nm a:hover { @apply text-teal underline; }
+
+/* ========== Controls ========== */
+.controls { @apply flex gap-3 items-center flex-wrap mb-3.5; }
+.search { @apply flex-1 min-w-50 flex items-center gap-2 bg-panel border border-line rounded-md px-3.25 py-2.25; }
+.search input { @apply flex-1 bg-transparent border-none outline-none text-text font-sans text-sm; }
+.search input::placeholder { @apply text-muted2; }
+.search svg { @apply w-3.75 h-3.75 shrink-0; }
+.legend { @apply flex items-center gap-2 text-muted2 text-[11.5px] font-mono; }
+.legend .ramp { @apply w-30 h-2.5 rounded-full; background: linear-gradient(90deg, #16343b, #1f6f6e, #2bb6a8, #f4b942, #ff6a3d); }
+
+/* ========== Heatmap table ========== */
+.tablewrap { @apply border border-line rounded-[14px] overflow-auto max-h-[78vh] bg-panel2; }
+table { @apply border-separate border-spacing-0 w-max min-w-full; }
+thead th { @apply sticky top-0 z-3 bg-[#0b181b] text-muted font-mono font-medium text-[11px] px-1 py-2.25 border-b border-line2 whitespace-nowrap cursor-pointer select-none; }
+thead th.yr { @apply w-7.5 text-center tracking-wide px-0.5 py-2; writing-mode: vertical-rl; transform: rotate(180deg); }
+thead th.sortable:hover { @apply text-text; }
+thead th .arr { @apply text-brass; }
+th.pin, td.pin { @apply sticky left-0 z-2 bg-panel2 text-left border-r border-line2; }
+thead th.pin { @apply z-4 bg-[#0b181b]; }
+.nmcell { @apply min-w-47 max-w-47 px-3 py-1.75; }
+.nmcell .nm { @apply font-semibold text-[13.5px] whitespace-nowrap overflow-hidden text-ellipsis; }
+.nmcell .meta { @apply text-muted2 font-mono text-[10.5px] mt-px; }
+td.tot, th.tot { @apply sticky left-47 z-2 bg-panel2 text-center font-mono font-bold min-w-13.5 border-r border-line2 text-brass; }
+thead th.tot { @apply z-4 bg-[#0b181b]; }
+td.sea, th.sea { @apply text-center font-mono text-xs text-muted min-w-10.5 border-r border-line2; }
+tbody tr { @apply border-b border-[rgba(29,58,62,.5)]; }
+tbody tr:hover td.pin, tbody tr:hover td.tot { @apply bg-[#16302f]; }
+td.cell { @apply w-7.5 min-w-7.5 text-center font-mono text-[11px] font-medium p-0 h-7.5 text-[#0b181b]; }
+td.cell.empty { @apply text-transparent; }
+.rank { @apply font-mono text-muted2 text-[10.5px] mr-1.75; }
+
+/* ========== Footer / misc ========== */
+.tablefoot { @apply flex items-center gap-3.5 flex-wrap mt-3.5 text-muted2 text-[13px] font-mono; }
+.btn { @apply bg-panel border border-line2 text-text font-sans text-[13px] font-medium px-3.75 py-2 rounded-[9px] cursor-pointer; }
+.btn:hover { @apply border-teal text-teal; }
+.loading { @apply p-10 text-center text-muted2 font-mono text-[13px]; }
+footer { @apply pt-11.5 pb-15 text-muted2 text-[12.5px] leading-relaxed; }
+footer .prov { @apply border-t border-line pt-5 max-w-[80ch]; }
+footer .prov b { @apply text-muted; }
+footer .prov a { @apply text-teal no-underline; }
+footer .prov a:hover { @apply underline; }
+
+@media (max-width: 720px) {
+  .stats { @apply grid-cols-2; }
+  .nmcell { @apply min-w-37.5 max-w-37.5; }
+  td.tot, th.tot { left: 150px; }
+}
+
+/* ========== Focus styles ========== */
+:focus-visible {
+  @apply outline-2 outline-offset-2 outline-teal;
+}
+.search:focus-within {
+  @apply border-teal;
+}
+
+/* ========== Skip link ========== */
+.skip-link {
+  @apply absolute left-2 bg-panel text-teal font-sans text-sm px-4 py-2 rounded-md z-50 -translate-y-full focus:translate-y-2 transition-transform;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * { animation: none !important; transition: none !important; }
+}
