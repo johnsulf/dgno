@@ -47,7 +47,7 @@ export default function LongevityTable({
             {topSeasons.map((p, i) => (
               <tr key={p.pdga}>
                 <td className="rk">{seasonRanks[i]}</td>
-                <td className="nm">{p.name}</td>
+                <td className="nm"><a href={`https://www.pdga.com/player/${p.pdga}`} target="_blank" rel="noopener noreferrer">{p.name}</a></td>
                 <td className="num hl">{p.seasons}</td>
                 <td className="num">{nf(p.total)}</td>
                 <td className="num dim">{p.first}–{p.last}</td>
@@ -72,7 +72,7 @@ export default function LongevityTable({
             {topStreaks.map((p, i) => (
               <tr key={p.pdga}>
                 <td className="rk">{streakRanks[i]}</td>
-                <td className="nm">{p.name}</td>
+                <td className="nm"><a href={`https://www.pdga.com/player/${p.pdga}`} target="_blank" rel="noopener noreferrer">{p.name}</a></td>
                 <td className="num hl">{p.streak}</td>
                 <td className="num">{p.seasons}</td>
                 <td className="num dim">{p.streakFrom}–{p.streakTo}</td>
@@ -97,7 +97,7 @@ export default function LongevityTable({
             {topActiveStreaks.map((p, i) => (
               <tr key={p.pdga}>
                 <td className="rk">{activeRanks[i]}</td>
-                <td className="nm">{p.name}</td>
+                <td className="nm"><a href={`https://www.pdga.com/player/${p.pdga}`} target="_blank" rel="noopener noreferrer">{p.name}</a></td>
                 <td className="num hl">{p.activeStreak}</td>
                 <td className="num">{p.seasons}</td>
                 <td className="num dim">{p.last! - p.activeStreak + 1}–{p.last}</td>

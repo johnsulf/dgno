@@ -33,7 +33,7 @@ export default function Footer() {
         <b>Oppdatering.</b> Dataene oppdateres etter nyttår hvert år.
       </div>
       <div className="prov" style={{ borderTop: "none", paddingTop: 10 }}>
-        Laget av <b>Erlend Johnsen</b> i samarbeid med <b>Håvard G. Frøysa</b>.
+        Laget av <b><a href="https://www.pdga.com/player/94422" target="_blank" rel="noopener noreferrer">Erlend Johnsen</a></b> i samarbeid med <b><a href="https://www.pdga.com/player/31549" target="_blank" rel="noopener noreferrer">Håvard G. Frøysa</a></b>.
       </div>
     </footer>
   );
