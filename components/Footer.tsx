@@ -24,6 +24,11 @@ export default function Footer() {
         vil være inkludert, mens norske spillere bosatt i utlandet ikke vil være
         inkludert.
       </div>
+      <div className="prov" style={{ borderTop: "none", paddingTop: 10 }}>
+        <b>Forbehold.</b> Spillere kan ha deltatt i PDGA-turneringer som ikke har
+        blitt registrert på PDGA-nummeret deres. Dette gjelder særlig tidlig i
+        tidsperioden.
+      </div>
     </footer>
   );
 }
