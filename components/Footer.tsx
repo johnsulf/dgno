@@ -29,6 +29,12 @@ export default function Footer() {
         blitt registrert på PDGA-nummeret deres. Dette gjelder særlig tidlig i
         tidsperioden.
       </div>
+      <div className="prov" style={{ borderTop: "none", paddingTop: 10 }}>
+        <b>Oppdatering.</b> Dataene oppdateres etter nyttår hvert år.
+      </div>
+      <div className="prov" style={{ borderTop: "none", paddingTop: 10 }}>
+        Laget av <b>Erlend Johnsen</b> i samarbeid med <b>Håvard G. Frøysa</b>.
+      </div>
     </footer>
   );
 }
