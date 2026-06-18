@@ -14,6 +14,8 @@ export type Agg = {
   years: number[];
   yr_players: number[];
   yr_tour: number[];
+  yr_new: number[];
+  yr_avg: number[];
   yr_top5: [string, number][][];
 };
 

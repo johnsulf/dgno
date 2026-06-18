@@ -3,6 +3,7 @@ import { Summary } from "@/lib/types";
 import GrowthChart from "@/components/GrowthChart";
 import StatStrip from "@/components/StatStrip";
 import TopBars from "@/components/TopBars";
+import YearlyStatsTable from "@/components/YearlyStatsTable";
 import HeatmapTable from "@/components/HeatmapTable";
 import Footer from "@/components/Footer";
 
@@ -27,6 +28,16 @@ export default function Home() {
         <GrowthChart agg={S.agg} />
         <StatStrip meta={S.meta} lead={S.top[0]} />
       </header>
+
+      <section>
+        <div className="sec-head">
+          <h2>Statistikk år for år</h2>
+          <span className="note">
+            aktive spillere, nye spillere, deltakelser og snitt
+          </span>
+        </div>
+        <YearlyStatsTable agg={S.agg} />
+      </section>
 
       <section>
         <div className="sec-head">

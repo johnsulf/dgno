@@ -92,6 +92,12 @@ const yrPlayers = years.map(
 const yrTour = years.map((y) =>
   pdgas.reduce((s, pd) => s + (tour.get(`${pd}|${y}`) || 0), 0)
 );
+const yrNew = years.map(
+  (y) => pdgas.filter((pd) => firstYr.get(pd) === y).length
+);
+const yrAvg = years.map((y, i) =>
+  yrPlayers[i] > 0 ? Math.round((yrTour[i] / yrPlayers[i]) * 10) / 10 : 0
+);
 
 // Top 5 players per year (for chart tooltip)
 const yrTop5 = years.map((y) => {
@@ -115,7 +121,7 @@ yrPlayers.forEach((n, i) => {
 
 const playersData = { years, players };
 const summary = {
-  agg: { years, yr_players: yrPlayers, yr_tour: yrTour, yr_top5: yrTop5 },
+  agg: { years, yr_players: yrPlayers, yr_tour: yrTour, yr_new: yrNew, yr_avg: yrAvg, yr_top5: yrTop5 },
   meta: {
     n_players: players.length,
     total_entries: totalEntries,
