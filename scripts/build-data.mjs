@@ -74,19 +74,27 @@ for (const [k, t] of tour) {
   }
 }
 
-// Compute longest streak for each player
-const streak = new Map();
+// Compute longest streak and active streak for each player
+const streakInfo = new Map(); // pdga -> { max, maxFrom, maxTo, active }
 for (const pdga of pdgas) {
-  let maxStreak = 0, cur = 0;
+  let maxStreak = 0, maxFrom = 0, maxTo = 0;
+  let cur = 0, curFrom = 0;
   for (const yr of years) {
     if ((tour.get(`${pdga}|${yr}`) || 0) > 0) {
+      if (cur === 0) curFrom = yr;
       cur++;
-      if (cur > maxStreak) maxStreak = cur;
+      if (cur > maxStreak) { maxStreak = cur; maxFrom = curFrom; maxTo = yr; }
     } else {
       cur = 0;
     }
   }
-  streak.set(pdga, maxStreak);
+  // Active streak = streak that includes the last year
+  let active = 0;
+  for (let i = years.length - 1; i >= 0; i--) {
+    if ((tour.get(`${pdga}|${years[i]}`) || 0) > 0) active++;
+    else break;
+  }
+  streakInfo.set(pdga, { max: maxStreak, maxFrom, maxTo, active });
 }
 
 const players = pdgas.map((pdga) => ({
@@ -94,7 +102,7 @@ const players = pdgas.map((pdga) => ({
   name: name.get(pdga).name,
   total: total.get(pdga) || 0,
   seasons: seasons.get(pdga) || 0,
-  streak: streak.get(pdga) || 0,
+  streak: streakInfo.get(pdga)?.max || 0,
   first: firstYr.get(pdga) ?? null,
   last: lastYr.get(pdga) ?? null,
   y: years.map((yr) => tour.get(`${pdga}|${yr}`) || 0),
@@ -156,9 +164,18 @@ const summary = {
   topSeasons: [...players].sort((a, b) => b.seasons - a.seasons || b.total - a.total).slice(0, 20).map((p) => ({
     pdga: p.pdga, name: p.name, seasons: p.seasons, total: p.total, first: p.first, last: p.last,
   })),
-  topStreaks: [...players].sort((a, b) => b.streak - a.streak || b.seasons - a.seasons).slice(0, 20).map((p) => ({
-    pdga: p.pdga, name: p.name, streak: p.streak, seasons: p.seasons, first: p.first, last: p.last,
-  })),
+  topStreaks: [...players].sort((a, b) => b.streak - a.streak || b.seasons - a.seasons).slice(0, 20).map((p) => {
+    const si = streakInfo.get(p.pdga);
+    return { pdga: p.pdga, name: p.name, streak: p.streak, seasons: p.seasons, streakFrom: si.maxFrom, streakTo: si.maxTo };
+  }),
+  topActiveStreaks: [...players]
+    .map((p) => ({ ...p, activeStreak: streakInfo.get(p.pdga)?.active || 0 }))
+    .filter((p) => p.activeStreak > 0)
+    .sort((a, b) => b.activeStreak - a.activeStreak || b.seasons - a.seasons)
+    .slice(0, 20)
+    .map((p) => ({
+      pdga: p.pdga, name: p.name, activeStreak: p.activeStreak, seasons: p.seasons, first: p.first, last: p.last,
+    })),
 };
 
 fs.mkdirSync(path.join(ROOT, "public", "data"), { recursive: true });

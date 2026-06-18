@@ -65,10 +65,16 @@ export default function HeatmapTable() {
     const raw = debouncedQuery.trim().toLowerCase();
     const s = raw.length >= 3 ? raw : "";
 
-    // Build global rank map based on total (original order)
+    // Build global rank map based on total (competition ranking: ties share lowest rank)
     const globalRank = new Map<string, number>();
     const ranked = data.players.slice().sort((a, b) => b.total - a.total || a.name.localeCompare(b.name));
-    for (let i = 0; i < ranked.length; i++) globalRank.set(ranked[i].pdga, i + 1);
+    for (let i = 0; i < ranked.length; i++) {
+      if (i === 0 || ranked[i].total !== ranked[i - 1].total) {
+        globalRank.set(ranked[i].pdga, i + 1);
+      } else {
+        globalRank.set(ranked[i].pdga, globalRank.get(ranked[i - 1].pdga)!);
+      }
+    }
 
     let list = s
       ? data.players.filter(

@@ -144,7 +144,7 @@ td.cell.empty { @apply text-transparent; }
 .yearly-stats th:not(:first-child), .yearly-stats td:not(:first-child) { @apply text-right; }
 
 /* ========== Longevity tables ========== */
-.longevity-grid { @apply grid grid-cols-1 md:grid-cols-2 gap-5; }
+.longevity-grid { @apply grid grid-cols-1 md:grid-cols-3 gap-5; }
 .longevity-card { @apply bg-panel border border-line rounded-[14px] overflow-hidden; }
 .longevity-card h3 { @apply font-display font-semibold text-[15px] tracking-tight px-4.5 pt-4 pb-2 m-0; }
 .longevity-table { @apply w-full border-collapse; table-layout: fixed; }

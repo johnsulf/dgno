@@ -57,7 +57,7 @@ export default function Home() {
             flest aktive sesonger og lengste sammenhengende rekker
           </span>
         </div>
-        <LongevityTable topSeasons={S.topSeasons} topStreaks={S.topStreaks} />
+        <LongevityTable topSeasons={S.topSeasons} topStreaks={S.topStreaks} topActiveStreaks={S.topActiveStreaks} />
       </section>
 
       <section>

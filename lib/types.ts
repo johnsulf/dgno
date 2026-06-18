@@ -24,6 +24,15 @@ export type TopStreakPlayer = {
   name: string;
   streak: number;
   seasons: number;
+  streakFrom: number;
+  streakTo: number;
+};
+
+export type TopActiveStreakPlayer = {
+  pdga: string;
+  name: string;
+  activeStreak: number;
+  seasons: number;
   first: number | null;
   last: number | null;
 };
@@ -52,6 +61,7 @@ export type Summary = {
   top: TopPlayer[];
   topSeasons: TopSeasonsPlayer[];
   topStreaks: TopStreakPlayer[];
+  topActiveStreaks: TopActiveStreakPlayer[];
 };
 
 export type PlayersData = {
