@@ -4,6 +4,7 @@ import GrowthChart from "@/components/GrowthChart";
 import StatStrip from "@/components/StatStrip";
 import TopBars from "@/components/TopBars";
 import YearlyStatsTable from "@/components/YearlyStatsTable";
+import LongevityTable from "@/components/LongevityTable";
 import HeatmapTable from "@/components/HeatmapTable";
 import Footer from "@/components/Footer";
 
@@ -47,6 +48,16 @@ export default function Home() {
           </span>
         </div>
         <TopBars top={S.top} />
+      </section>
+
+      <section>
+        <div className="sec-head">
+          <h2>Veteraner og streaks</h2>
+          <span className="note">
+            flest aktive sesonger og lengste sammenhengende rekker
+          </span>
+        </div>
+        <LongevityTable topSeasons={S.topSeasons} topStreaks={S.topStreaks} />
       </section>
 
       <section>

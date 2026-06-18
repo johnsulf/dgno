@@ -10,6 +10,24 @@ export type Player = {
 
 export type TopPlayer = Pick<Player, "pdga" | "name" | "total" | "first" | "last">;
 
+export type TopSeasonsPlayer = {
+  pdga: string;
+  name: string;
+  seasons: number;
+  total: number;
+  first: number | null;
+  last: number | null;
+};
+
+export type TopStreakPlayer = {
+  pdga: string;
+  name: string;
+  streak: number;
+  seasons: number;
+  first: number | null;
+  last: number | null;
+};
+
 export type Agg = {
   years: number[];
   yr_players: number[];
@@ -32,6 +50,8 @@ export type Summary = {
   agg: Agg;
   meta: Meta;
   top: TopPlayer[];
+  topSeasons: TopSeasonsPlayer[];
+  topStreaks: TopStreakPlayer[];
 };
 
 export type PlayersData = {

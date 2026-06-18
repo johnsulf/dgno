@@ -74,11 +74,27 @@ for (const [k, t] of tour) {
   }
 }
 
+// Compute longest streak for each player
+const streak = new Map();
+for (const pdga of pdgas) {
+  let maxStreak = 0, cur = 0;
+  for (const yr of years) {
+    if ((tour.get(`${pdga}|${yr}`) || 0) > 0) {
+      cur++;
+      if (cur > maxStreak) maxStreak = cur;
+    } else {
+      cur = 0;
+    }
+  }
+  streak.set(pdga, maxStreak);
+}
+
 const players = pdgas.map((pdga) => ({
   pdga,
   name: name.get(pdga).name,
   total: total.get(pdga) || 0,
   seasons: seasons.get(pdga) || 0,
+  streak: streak.get(pdga) || 0,
   first: firstYr.get(pdga) ?? null,
   last: lastYr.get(pdga) ?? null,
   y: years.map((yr) => tour.get(`${pdga}|${yr}`) || 0),
@@ -136,6 +152,12 @@ const summary = {
     total: p.total,
     first: p.first,
     last: p.last,
+  })),
+  topSeasons: [...players].sort((a, b) => b.seasons - a.seasons || b.total - a.total).slice(0, 20).map((p) => ({
+    pdga: p.pdga, name: p.name, seasons: p.seasons, total: p.total, first: p.first, last: p.last,
+  })),
+  topStreaks: [...players].sort((a, b) => b.streak - a.streak || b.seasons - a.seasons).slice(0, 20).map((p) => ({
+    pdga: p.pdga, name: p.name, streak: p.streak, seasons: p.seasons, first: p.first, last: p.last,
   })),
 };
 
