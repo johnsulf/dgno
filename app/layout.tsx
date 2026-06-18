@@ -1,8 +1,13 @@
 import type { Metadata } from "next";
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Norsk diskgolf - turneringer per spiller per år, 1990–2025",
+  title: {
+    default: "Norsk diskgolf i tall · 1990–2025",
+    template: "%s · Norsk diskgolf i tall",
+  },
   description:
     "Antall PDGA-turneringer spilt per norsk spiller per år, summert på tvers av alle divisjoner, fra 1990 til i dag.",
 };
@@ -30,7 +35,13 @@ export default function RootLayout({
         <a href="#main-content" className="skip-link">
           Hopp til hovedinnhold
         </a>
-        {children}
+        <Header />
+        <main id="main-content" className="wrap page-content">
+          {children}
+        </main>
+        <div className="wrap">
+          <Footer />
+        </div>
       </body>
     </html>
   );

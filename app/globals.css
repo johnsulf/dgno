@@ -34,13 +34,47 @@ body {
 
 /* ========== Layout ========== */
 .wrap { @apply max-w-295 mx-auto px-5.5; }
+.page-content { @apply pb-8; }
+
+/* ========== Site header ========== */
+.site-header {
+  @apply sticky top-0 z-40 border-b border-line;
+  background: rgba(12, 26, 29, 0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+.header-inner { @apply flex items-center justify-between h-14; }
+.logo { @apply flex items-center gap-0 no-underline text-lg font-display font-bold tracking-tight; }
+.logo-dg { @apply text-text; }
+.logo-no { @apply text-teal; }
+.nav-desktop { @apply hidden md:flex items-center gap-1; }
+.nav-link {
+  @apply font-sans text-[13.5px] font-medium text-muted px-3 py-1.5 rounded-md transition-colors no-underline;
+}
+.nav-link:hover { @apply text-text bg-[rgba(255,255,255,.06)]; }
+.nav-link.active { @apply text-teal bg-[rgba(43,182,168,.08)]; }
+.nav-toggle { @apply md:hidden flex items-center justify-center w-9 h-9 rounded-md text-muted bg-transparent border-none cursor-pointer; }
+.nav-toggle:hover { @apply text-text bg-[rgba(255,255,255,.06)]; }
+.nav-mobile {
+  @apply md:hidden flex flex-col border-t border-line pb-2;
+  background: rgba(12, 26, 29, 0.95);
+}
+.nav-mobile-link {
+  @apply font-sans text-[14px] font-medium text-muted px-5.5 py-2.5 no-underline transition-colors;
+}
+.nav-mobile-link:hover { @apply text-text bg-[rgba(255,255,255,.06)]; }
+.nav-mobile-link.active { @apply text-teal; }
+
+/* ========== Page headers ========== */
+.page-header { @apply pt-10 pb-2; }
+.page-header h1 { @apply font-display font-bold tracking-tight text-[clamp(24px,4vw,40px)] leading-none mb-2; }
 
 /* ========== Hero ========== */
 .eyebrow { @apply font-mono text-xs tracking-[.22em] uppercase text-teal font-medium; }
 h1 { @apply font-display font-bold tracking-tight text-[clamp(30px,5.5vw,58px)] leading-none mt-[.35em] mb-[.25em]; }
 h1 .hl { @apply text-brass; }
 .lede { @apply text-muted max-w-[64ch] text-[clamp(15px,1.6vw,17px)] m-0; }
-header.hero { @apply pt-13.5 pb-2; }
+header.hero { @apply pt-10 pb-2; }
 
 /* ========== Chart card ========== */
 .chartcard { @apply mt-7.5 bg-linear-to-b from-panel to-panel2 border border-line rounded-2xl p-5 pb-3 relative overflow-hidden; }
@@ -131,6 +165,33 @@ td.cell.empty { @apply text-transparent; }
 
 /* ========== Footer / misc ========== */
 .tablefoot { @apply flex items-center gap-3.5 flex-wrap mt-3.5 text-muted2 text-[13px] font-mono; }
+
+/* ========== Link grid (homepage) ========== */
+.quick-links { @apply pt-10; }
+.link-grid { @apply grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4; }
+.link-card {
+  @apply block bg-panel border border-line rounded-[14px] p-5 no-underline transition-all;
+}
+.link-card:hover { @apply border-teal bg-[rgba(43,182,168,.05)] scale-[1.01]; }
+.link-card h3 { @apply font-display font-semibold text-text text-[16px] tracking-tight m-0 mb-1.5; }
+.link-card p { @apply text-muted2 text-[13.5px] leading-snug m-0; }
+
+/* ========== History / periods ========== */
+.period-nav { @apply flex gap-2 flex-wrap mt-6 mb-6; }
+.period-nav-link {
+  @apply font-mono text-[12.5px] font-medium text-muted px-3.5 py-1.5 rounded-full border border-line no-underline transition-colors;
+}
+.period-nav-link:hover { @apply border-teal text-teal; }
+.periods { @apply flex flex-col gap-6 pb-4; }
+.period-card {
+  @apply bg-panel border border-line rounded-[14px] p-6 scroll-mt-20;
+}
+.period-card .period-badge {
+  @apply inline-block font-mono text-[11.5px] font-semibold text-teal bg-[rgba(43,182,168,.1)] border border-[rgba(43,182,168,.2)] rounded-full px-3 py-0.5 mb-3;
+}
+.period-card h2 { @apply font-display font-bold text-[clamp(18px,2.5vw,24px)] tracking-tight mt-0 mb-3; }
+.period-card p { @apply text-muted text-[15px] leading-relaxed m-0 mb-3 max-w-[72ch]; }
+.period-card p:last-child { @apply mb-0; }
 
 /* ========== Yearly stats table ========== */
 .yearly-stats-wrap { @apply border border-line rounded-[14px] overflow-auto max-h-[70vh] bg-panel2; }

@@ -2,17 +2,13 @@ import summary from "@/data/summary.json";
 import { Summary } from "@/lib/types";
 import GrowthChart from "@/components/GrowthChart";
 import StatStrip from "@/components/StatStrip";
-import TopBars from "@/components/TopBars";
-import YearlyStatsTable from "@/components/YearlyStatsTable";
-import LongevityTable from "@/components/LongevityTable";
-import HeatmapTable from "@/components/HeatmapTable";
-import Footer from "@/components/Footer";
+import Link from "next/link";
 
 const S = summary as unknown as Summary;
 
 export default function Home() {
   return (
-    <main id="main-content" className="wrap">
+    <>
       <header className="hero">
         <div className="eyebrow">PDGA-statistikk · Norge · 1990–2025</div>
         <h1>
@@ -30,47 +26,33 @@ export default function Home() {
         <StatStrip meta={S.meta} lead={S.top[0]} />
       </header>
 
-      <section>
+      <section className="quick-links">
         <div className="sec-head">
-          <h2>Statistikk år for år</h2>
-          <span className="note">
-            aktive spillere, nye spillere, deltakelser og snitt
-          </span>
+          <h2>Utforsk tallene</h2>
         </div>
-        <YearlyStatsTable agg={S.agg} />
-      </section>
-
-      <section>
-        <div className="sec-head">
-          <h2>Mest aktive gjennom tidene</h2>
-          <span className="note">
-            flest turneringer totalt, alle divisjoner, 1990–2025
-          </span>
+        <div className="link-grid">
+          <Link href="/statistikk" className="link-card">
+            <h3>Statistikk år for år</h3>
+            <p>Aktive spillere, nye spillere, deltakelser og snitt for hvert år.</p>
+          </Link>
+          <Link href="/topp" className="link-card">
+            <h3>Mest aktive spillere</h3>
+            <p>Hvem har spilt flest turneringer totalt gjennom alle år?</p>
+          </Link>
+          <Link href="/veteraner" className="link-card">
+            <h3>Veteraner og streaks</h3>
+            <p>Flest aktive sesonger og lengste sammenhengende rekker.</p>
+          </Link>
+          <Link href="/heatmap" className="link-card">
+            <h3>Heatmap</h3>
+            <p>Fullstendig oversikt over deltakelser per spiller per år.</p>
+          </Link>
+          <Link href="/historie" className="link-card">
+            <h3>Historie</h3>
+            <p>Norsk diskgolf gjennom tidene – fra pionertid til massesport.</p>
+          </Link>
         </div>
-        <TopBars top={S.top} />
       </section>
-
-      <section>
-        <div className="sec-head">
-          <h2>Veteraner og streaks</h2>
-          <span className="note">
-            flest aktive sesonger og lengste sammenhengende rekker
-          </span>
-        </div>
-        <LongevityTable topSeasons={S.topSeasons} topStreaks={S.topStreaks} topActiveStreaks={S.topActiveStreaks} />
-      </section>
-
-      <section>
-        <div className="sec-head">
-          <h2>Deltakelser per spiller per år</h2>
-          <span className="note">
-            klikk en kolonne for å sortere · søk treffer hele feltet
-          </span>
-        </div>
-        <HeatmapTable />
-      </section>
-
-      <Footer />
-    </main>
+    </>
   );
 }
