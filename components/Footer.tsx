@@ -18,6 +18,12 @@ export default function Footer() {
         antall år med minst én turnering. De tidlige årene er reelt tynne; første
         registrerte norske resultat er fra 1990.
       </div>
+      <div className="prov" style={{ borderTop: "none", paddingTop: 10 }}>
+        <b>Hvem er med?</b> Listen inneholder spillere med nåværende bosted Norge i
+        spillerprofilen på PDGA. Dette betyr at utenlandske spillere bosatt i Norge
+        vil være inkludert, mens norske spillere bosatt i utlandet ikke vil være
+        inkludert.
+      </div>
     </footer>
   );
 }

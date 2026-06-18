@@ -64,6 +64,12 @@ export default function HeatmapTable() {
     if (!data || !bodyRef.current) return;
     const raw = debouncedQuery.trim().toLowerCase();
     const s = raw.length >= 3 ? raw : "";
+
+    // Build global rank map based on total (original order)
+    const globalRank = new Map<string, number>();
+    const ranked = data.players.slice().sort((a, b) => b.total - a.total || a.name.localeCompare(b.name));
+    for (let i = 0; i < ranked.length; i++) globalRank.set(ranked[i].pdga, i + 1);
+
     let list = s
       ? data.players.filter(
           (p) => p.name.toLowerCase().includes(s) || p.pdga.includes(s)
@@ -85,8 +91,9 @@ export default function HeatmapTable() {
       let html = "";
       for (let i = 0; i < vis.length; i++) {
         const p = vis[i];
+        const rank = globalRank.get(p.pdga) ?? (i + 1);
         let c =
-          `<td class="pin nmcell"><div class="nm"><span class="rank">${i + 1}</span>` +
+          `<td class="pin nmcell"><div class="nm"><span class="rank">${rank}</span>` +
           `<a href="https://www.pdga.com/player/${esc(p.pdga)}" target="_blank" rel="noopener noreferrer">${esc(
             p.name
           )}</a></div>` +
