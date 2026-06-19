@@ -11,6 +11,7 @@ const NAV_ITEMS = [
   { href: "/topp", label: "Mest aktive" },
   { href: "/veteraner", label: "Veteraner" },
   { href: "/heatmap", label: "Heatmap" },
+  { href: "/events", label: "Turneringer" },
   { href: "/historie", label: "Historie" },
 ];
 
@@ -65,7 +66,11 @@ export default function Header() {
       </div>
 
       {open && (
-        <nav id="mobile-nav" className="nav-mobile" aria-label="Mobilnavigasjon">
+        <nav
+          id="mobile-nav"
+          className="nav-mobile"
+          aria-label="Mobilnavigasjon"
+        >
           {NAV_ITEMS.map((item) => (
             <Link
               key={item.href}
