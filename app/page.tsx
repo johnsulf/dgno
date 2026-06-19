@@ -17,9 +17,9 @@ export default function Home() {
           norsk diskgolf i <span className="hl">36 sesonger</span>
         </h1>
         <p className="lede">
-          Antall PDGA-turneringer spilt per spiller per år, summert på tvers av alle
-          divisjoner - hele det norske feltet, fra det aller første registrerte
-          resultatet i 1990 til 2025.
+          Antall PDGA-turneringer spilt per spiller per år, summert på tvers av
+          alle divisjoner - hele det norske feltet, fra det aller første
+          registrerte resultatet i 1990 til 2025.
         </p>
 
         <GrowthChart agg={S.agg} />
@@ -33,18 +33,28 @@ export default function Home() {
         <div className="link-grid">
           <Link href="/statistikk" className="link-card">
             <h3>Statistikk år for år</h3>
-            <p>Aktive spillere, nye spillere, deltakelser og snitt for hvert år.</p>
+            <p>
+              Aktive spillere, nye spillere, deltakelser og snitt for hvert år.
+            </p>
           </Link>
           <Link href="/topp" className="link-card">
             <h3>Mest aktive spillere</h3>
             <p>Hvem har spilt flest turneringer totalt gjennom alle år?</p>
+          </Link>
+          <Link href="/topp5ar" className="link-card">
+            <h3>Mest aktive siste 5 år</h3>
+            <p>Toppliste og årstabell for de fem nyeste sesongene.</p>
+          </Link>
+          <Link href="/events" className="link-card">
+            <h3>Turneringer arrangert i Norge</h3>
+            <p>Graf, årstabell og komplett turneringsliste per nivå.</p>
           </Link>
           <Link href="/veteraner" className="link-card">
             <h3>Veteraner og streaks</h3>
             <p>Flest aktive sesonger og lengste sammenhengende rekker.</p>
           </Link>
           <Link href="/heatmap" className="link-card">
-            <h3>Heatmap</h3>
+            <h3>Spillerdetaljer</h3>
             <p>Fullstendig oversikt over deltakelser per spiller per år.</p>
           </Link>
           <Link href="/historie" className="link-card">

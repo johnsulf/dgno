@@ -6,7 +6,7 @@ import { nf } from "@/lib/heat";
 export type NamedEvent = {
   id: string;
   name: string;
-  tier: "ES" | "A" | "B";
+  tier: "ES" | "A" | "B" | "C";
   rawtier: string;
   year: number;
   date: string;
@@ -18,15 +18,28 @@ const TIER_COLOR: Record<NamedEvent["tier"], string> = {
   ES: "#e9f1ec",
   A: "#ff6a3d",
   B: "#f4b942",
+  C: "#2bb6a8",
 };
-const TIER_RANK: Record<NamedEvent["tier"], number> = { ES: 0, A: 1, B: 2 };
-const FILTERS: ("ALL" | "ES" | "A" | "B")[] = ["ALL", "ES", "A", "B"];
+const TIER_RANK: Record<NamedEvent["tier"], number> = {
+  ES: 0,
+  A: 1,
+  B: 2,
+  C: 3,
+};
+const FILTERS: ("ALL" | "ES" | "A" | "B" | "C")[] = [
+  "ALL",
+  "ES",
+  "A",
+  "B",
+  "C",
+];
 
 type SortKey = "year" | "name" | "tier" | "city";
+type TierFilter = "ALL" | "ES" | "A" | "B" | "C";
 
 export default function EventsTable({ events }: { events: NamedEvent[] }) {
   const [query, setQuery] = useState("");
-  const [tier, setTier] = useState<"ALL" | "ES" | "A" | "B">("ALL");
+  const [tier, setTier] = useState<TierFilter>("ALL");
   const [sortKey, setSortKey] = useState<SortKey>("year");
   const [dir, setDir] = useState<number>(-1);
 
@@ -160,7 +173,7 @@ export default function EventsTable({ events }: { events: NamedEvent[] }) {
 const CSS = `
 .ev-controls{display:flex;gap:10px;flex-wrap:wrap;align-items:center;margin-bottom:14px}
 .ev-search{flex:1;min-width:200px;display:flex;align-items:center;gap:8px;background:var(--color-panel,#102528);border:1px solid var(--color-line,#1d3a3e);border-radius:10px;padding:9px 13px;color:var(--color-muted,#83a8a1)}
-.ev-search>svg{width:15px;height:15px;flex-shrink:0}
+.ev-search>svg{width:15px;height:15px;min-width:15px;min-height:15px;flex:0 0 15px}
 .ev-search input{flex:1;background:none;border:none;outline:none;color:var(--color-text,#e9f1ec);font:inherit;font-size:14px}
 .ev-search input::placeholder{color:var(--color-muted2,#5d827c)}
 .ev-filters{display:flex;gap:6px;flex-wrap:wrap}

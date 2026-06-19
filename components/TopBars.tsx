@@ -1,6 +1,12 @@
 import { TopPlayer } from "@/lib/types";
 
-export default function TopBars({ top }: { top: TopPlayer[] }) {
+export default function TopBars({
+  top,
+  showActiveYears = true,
+}: {
+  top: TopPlayer[];
+  showActiveYears?: boolean;
+}) {
   const players = top.slice(0, 20);
   const mx = players[0]?.total ?? 1;
   const ranks: number[] = [];
@@ -31,7 +37,10 @@ export default function TopBars({ top }: { top: TopPlayer[] }) {
                   {p.name}
                 </a>
                 <small>
-                  #{p.pdga} · {p.first}–{p.last}
+                  #{p.pdga}
+                  {showActiveYears
+                    ? ` · ${p.first ?? "?"}–${p.last ?? "?"}`
+                    : ""}
                 </small>
               </span>
               <span className="v">{p.total}</span>

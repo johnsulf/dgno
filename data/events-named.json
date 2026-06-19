@@ -1,5 +1,5 @@
 {
-  "count": 139,
+  "count": 316,
   "events": [
     {
       "id": "90652",
@@ -242,6 +242,436 @@
       "cls": "Am"
     },
     {
+      "id": "96702",
+      "name": "10 års jubileum SDGK",
+      "tier": "C",
+      "rawtier": "C",
+      "year": 2025,
+      "date": "2025-10-25",
+      "city": "sandnes",
+      "cls": "Pro-Am"
+    },
+    {
+      "id": "92162",
+      "name": "2nd annual Oslo Disc Golf Classic presented by DGShop",
+      "tier": "C",
+      "rawtier": "C",
+      "year": 2025,
+      "date": "2025-06-07",
+      "city": "Oslo",
+      "cls": "Am"
+    },
+    {
+      "id": "96922",
+      "name": "Aa-gård Open Høst 2025",
+      "tier": "C",
+      "rawtier": "C",
+      "year": 2025,
+      "date": "2025-10-04",
+      "city": "Tennevoll",
+      "cls": "Pro-Am"
+    },
+    {
+      "id": "92405",
+      "name": "Aa-gård Vårturnering",
+      "tier": "C",
+      "rawtier": "C",
+      "year": 2025,
+      "date": "2025-05-03",
+      "city": "Tennevoll",
+      "cls": "Pro-Am"
+    },
+    {
+      "id": "93554",
+      "name": "Eigersund Open 2025",
+      "tier": "C",
+      "rawtier": "C",
+      "year": 2025,
+      "date": "2025-06-28",
+      "city": "Hellvik",
+      "cls": "Pro-Am"
+    },
+    {
+      "id": "94329",
+      "name": "Eiker Grand Slam 2025 - by Alfa Discs",
+      "tier": "C",
+      "rawtier": "C",
+      "year": 2025,
+      "date": "2025-10-18",
+      "city": "Mjøndalen",
+      "cls": "Pro-Am"
+    },
+    {
+      "id": "88823",
+      "name": "Eiker Open 2025 by Alfa Discs",
+      "tier": "C",
+      "rawtier": "C",
+      "year": 2025,
+      "date": "2025-04-05",
+      "city": "Mjøndalen",
+      "cls": "Pro-Am"
+    },
+    {
+      "id": "92412",
+      "name": "Fosenkraft Open 2025",
+      "tier": "C",
+      "rawtier": "C",
+      "year": 2025,
+      "date": "2025-05-24",
+      "city": "Brekstad",
+      "cls": "Pro-Am"
+    },
+    {
+      "id": "90461",
+      "name": "Glåmos Open Trønder Tour 2025 sponset av Frisbeebutikken",
+      "tier": "C",
+      "rawtier": "C",
+      "year": 2025,
+      "date": "2025-06-21",
+      "city": "Glåmos",
+      "cls": "Pro-Am"
+    },
+    {
+      "id": "93055",
+      "name": "Grong Open Trønder Tour 2025 sponset av Frisbeebutikken",
+      "tier": "C",
+      "rawtier": "C",
+      "year": 2025,
+      "date": "2025-08-30",
+      "city": "Medjå",
+      "cls": "Pro-Am"
+    },
+    {
+      "id": "94937",
+      "name": "Harstad open",
+      "tier": "C",
+      "rawtier": "C",
+      "year": 2025,
+      "date": "2025-08-23",
+      "city": "Harstad",
+      "cls": "Pro-Am"
+    },
+    {
+      "id": "90277",
+      "name": "Hemne Open Trønder Tour 2025 sponset av Frisbeebutikken",
+      "tier": "C",
+      "rawtier": "C",
+      "year": 2025,
+      "date": "2025-05-10",
+      "city": "Kyrksæterøra",
+      "cls": "Pro-Am"
+    },
+    {
+      "id": "88690",
+      "name": "Kickoff Solliskogen 2025",
+      "tier": "C",
+      "rawtier": "C",
+      "year": 2025,
+      "date": "2025-03-22",
+      "city": "Moss",
+      "cls": "Pro-Am"
+    },
+    {
+      "id": "93533",
+      "name": "Konsmoparken Open 2025",
+      "tier": "C",
+      "rawtier": "C",
+      "year": 2025,
+      "date": "2025-06-28",
+      "city": "Konsmo",
+      "cls": "Pro-Am"
+    },
+    {
+      "id": "94011",
+      "name": "Lofoten Amateur Open",
+      "tier": "C",
+      "rawtier": "C",
+      "year": 2025,
+      "date": "2025-08-08",
+      "city": "Bøstad",
+      "cls": "Am"
+    },
+    {
+      "id": "92955",
+      "name": "NM i diskgolf for døve og hørselshemmede 2025",
+      "tier": "C",
+      "rawtier": "C",
+      "year": 2025,
+      "date": "2025-06-21",
+      "city": "Søgne",
+      "cls": "Pro-Am"
+    },
+    {
+      "id": "94787",
+      "name": "Nannestad Open 2025",
+      "tier": "C",
+      "rawtier": "C",
+      "year": 2025,
+      "date": "2025-08-30",
+      "city": "Nannestad",
+      "cls": "Pro-Am"
+    },
+    {
+      "id": "86730",
+      "name": "Nordic Female Open 2025 sponsored by Latitude64",
+      "tier": "C",
+      "rawtier": "C",
+      "year": 2025,
+      "date": "2025-05-24",
+      "city": "Barkåker",
+      "cls": "Pro-Am"
+    },
+    {
+      "id": "94062",
+      "name": "Nordisc Tour Stovner 2025 presented by DGShop | PDGA Europe Women´s Event",
+      "tier": "C",
+      "rawtier": "C",
+      "year": 2025,
+      "date": "2025-09-27",
+      "city": "Oslo",
+      "cls": "Am"
+    },
+    {
+      "id": "94058",
+      "name": "Nordisc Tour Ål 2025 presented by DGShop",
+      "tier": "C",
+      "rawtier": "C",
+      "year": 2025,
+      "date": "2025-08-16",
+      "city": "Ål",
+      "cls": "Am"
+    },
+    {
+      "id": "94488",
+      "name": "Nordnorsk Mesterskap 2025 Bodø",
+      "tier": "C",
+      "rawtier": "C",
+      "year": 2025,
+      "date": "2025-09-06",
+      "city": "Bodø",
+      "cls": "Pro-Am"
+    },
+    {
+      "id": "90107",
+      "name": "Opptur 2025 - Del 1: Flåklypa Sendeplatelag",
+      "tier": "C",
+      "rawtier": "C",
+      "year": 2025,
+      "date": "2025-05-10",
+      "city": "Lom",
+      "cls": "Pro-Am"
+    },
+    {
+      "id": "95194",
+      "name": "Romerike Tour 2025 - Varingskollen Open",
+      "tier": "C",
+      "rawtier": "C",
+      "year": 2025,
+      "date": "2025-09-27",
+      "city": "HAKADAL",
+      "cls": "Am"
+    },
+    {
+      "id": "95336",
+      "name": "Romerike Tour Valstad",
+      "tier": "C",
+      "rawtier": "C",
+      "year": 2025,
+      "date": "2025-08-16",
+      "city": "Skjetten",
+      "cls": "Pro"
+    },
+    {
+      "id": "91766",
+      "name": "Rådhusparken Open - Sponset av DGshop.no",
+      "tier": "C",
+      "rawtier": "C",
+      "year": 2025,
+      "date": "2025-04-19",
+      "city": "Lørenskog",
+      "cls": "Am"
+    },
+    {
+      "id": "89605",
+      "name": "Sandnes Parkettsliperi Challenge 2025",
+      "tier": "C",
+      "rawtier": "C",
+      "year": 2025,
+      "date": "2025-04-05",
+      "city": "Sandnes",
+      "cls": "Pro-Am"
+    },
+    {
+      "id": "92540",
+      "name": "Selbu Open Trønder Tour 2025 sponset av Frisbeebutikken",
+      "tier": "C",
+      "rawtier": "C",
+      "year": 2025,
+      "date": "2025-05-31",
+      "city": "Selbu",
+      "cls": "Pro-Am"
+    },
+    {
+      "id": "91048",
+      "name": "Skogen Rundt 2025",
+      "tier": "C",
+      "rawtier": "C",
+      "year": 2025,
+      "date": "2025-09-06",
+      "city": "Lillehammer",
+      "cls": "Pro-Am"
+    },
+    {
+      "id": "96104",
+      "name": "Stovner Open 2025",
+      "tier": "C",
+      "rawtier": "C",
+      "year": 2025,
+      "date": "2025-08-30",
+      "city": "Oslo",
+      "cls": "Pro-Am"
+    },
+    {
+      "id": "89256",
+      "name": "Toten Open 2025 Presented by MVP Disc Sports",
+      "tier": "C",
+      "rawtier": "C",
+      "year": 2025,
+      "date": "2025-05-24",
+      "city": "Lena",
+      "cls": "Pro-Am"
+    },
+    {
+      "id": "94349",
+      "name": "Trondheim Open Trønder Tour 2025 sponset av Frisbeebutikken",
+      "tier": "C",
+      "rawtier": "C",
+      "year": 2025,
+      "date": "2025-08-09",
+      "city": "Tiller",
+      "cls": "Pro-Am"
+    },
+    {
+      "id": "91421",
+      "name": "Trønder Tour 2025 Stjørdal Open sponset av Frisbeebutikken",
+      "tier": "C",
+      "rawtier": "C",
+      "year": 2025,
+      "date": "2025-04-26",
+      "city": "Stjørdal",
+      "cls": "Pro-Am"
+    },
+    {
+      "id": "95725",
+      "name": "VKT Sandnes 2025",
+      "tier": "C",
+      "rawtier": "C",
+      "year": 2025,
+      "date": "2025-09-06",
+      "city": "Sandnes",
+      "cls": "Pro-Am"
+    },
+    {
+      "id": "95306",
+      "name": "VT TOUR 2025 presentert av DGshop.no - Eidsfoss",
+      "tier": "C",
+      "rawtier": "C",
+      "year": 2025,
+      "date": "2025-09-13",
+      "city": "Hof",
+      "cls": "Pro-Am"
+    },
+    {
+      "id": "92783",
+      "name": "VT TOUR 2025 presentert av DGshop.no - Hestehagen",
+      "tier": "C",
+      "rawtier": "C",
+      "year": 2025,
+      "date": "2025-07-19",
+      "city": "Barkåker",
+      "cls": "Pro-Am"
+    },
+    {
+      "id": "91642",
+      "name": "VT TOUR 2025 presentert av DGshop.no - Sande",
+      "tier": "C",
+      "rawtier": "C",
+      "year": 2025,
+      "date": "2025-05-10",
+      "city": "Sande",
+      "cls": "Pro-Am"
+    },
+    {
+      "id": "92191",
+      "name": "Vestkysttour 2025 Flaktveit",
+      "tier": "C",
+      "rawtier": "C",
+      "year": 2025,
+      "date": "2025-05-03",
+      "city": "Bergen",
+      "cls": "Pro-Am"
+    },
+    {
+      "id": "92896",
+      "name": "Vestkysttour 2025 Kulleseidkanalen",
+      "tier": "C",
+      "rawtier": "C",
+      "year": 2025,
+      "date": "2025-07-26",
+      "city": "Finnås",
+      "cls": "Pro-Am"
+    },
+    {
+      "id": "95234",
+      "name": "Vestkysttour 2025 Lindås",
+      "tier": "C",
+      "rawtier": "C",
+      "year": 2025,
+      "date": "2025-08-30",
+      "city": "Lindås",
+      "cls": "Pro-Am"
+    },
+    {
+      "id": "96765",
+      "name": "Ålgård Open",
+      "tier": "C",
+      "rawtier": "C",
+      "year": 2025,
+      "date": "2025-09-26",
+      "city": "Ålgård",
+      "cls": "Pro-Am"
+    },
+    {
+      "id": "94509",
+      "name": "Åpent klubbmesterskap Tromsø Disksportklubb 2025",
+      "tier": "C",
+      "rawtier": "C",
+      "year": 2025,
+      "date": "2025-08-30",
+      "city": "Tromsø",
+      "cls": "Pro-Am"
+    },
+    {
+      "id": "95210",
+      "name": "Ølberg 10års jubileum",
+      "tier": "C",
+      "rawtier": "C",
+      "year": 2025,
+      "date": "2025-08-23",
+      "city": "Ræge",
+      "cls": "Pro-Am"
+    },
+    {
+      "id": "90037",
+      "name": "Øya Open 2025",
+      "tier": "C",
+      "rawtier": "C",
+      "year": 2025,
+      "date": "2025-03-29",
+      "city": "Hafslundsøy",
+      "cls": "Pro-Am"
+    },
+    {
       "id": "78196",
       "name": "DGPT - Krokhol Open presented by Latitude 64",
       "tier": "ES",
@@ -392,6 +822,406 @@
       "cls": "Pro-Am"
     },
     {
+      "id": "80807",
+      "name": "20 års Jubileum Sola Frisbeeklubb",
+      "tier": "C",
+      "rawtier": "C",
+      "year": 2024,
+      "date": "2024-05-31",
+      "city": "Ræge",
+      "cls": "Pro-Am"
+    },
+    {
+      "id": "85561",
+      "name": "Aa-gård Open",
+      "tier": "C",
+      "rawtier": "C",
+      "year": 2024,
+      "date": "2024-10-05",
+      "city": "Tennevoll",
+      "cls": "Pro-Am"
+    },
+    {
+      "id": "84702",
+      "name": "Adgt Skellefteå",
+      "tier": "C",
+      "rawtier": "C",
+      "year": 2024,
+      "date": "2024-08-24",
+      "city": "Skellefteå",
+      "cls": "Pro-Am"
+    },
+    {
+      "id": "83620",
+      "name": "Borg Open 2024",
+      "tier": "C",
+      "rawtier": "C",
+      "year": 2024,
+      "date": "2024-08-03",
+      "city": "Bøstad",
+      "cls": "Am"
+    },
+    {
+      "id": "78568",
+      "name": "Dragvoll Open - Trønder Tour 2024",
+      "tier": "C",
+      "rawtier": "C",
+      "year": 2024,
+      "date": "2024-05-04",
+      "city": "Trondheim",
+      "cls": "Pro-Am"
+    },
+    {
+      "id": "80272",
+      "name": "Eiker Open 2024 by Alfa Discs",
+      "tier": "C",
+      "rawtier": "C",
+      "year": 2024,
+      "date": "2024-04-27",
+      "city": "Mjøndalen",
+      "cls": "Pro-Am"
+    },
+    {
+      "id": "86012",
+      "name": "Endgame 2024",
+      "tier": "C",
+      "rawtier": "C",
+      "year": 2024,
+      "date": "2024-11-02",
+      "city": "Vear",
+      "cls": "Pro-Am"
+    },
+    {
+      "id": "83397",
+      "name": "Flaktveit Open #1 2024",
+      "tier": "C",
+      "rawtier": "C",
+      "year": 2024,
+      "date": "2024-06-29",
+      "city": "Flaktveit",
+      "cls": "Pro-Am"
+    },
+    {
+      "id": "85398",
+      "name": "Flaktveit Open #2 2024",
+      "tier": "C",
+      "rawtier": "C",
+      "year": 2024,
+      "date": "2024-09-14",
+      "city": "Bergen",
+      "cls": "Pro-Am"
+    },
+    {
+      "id": "80540",
+      "name": "Follo Tour 2024 - Nesodden og Langhus",
+      "tier": "C",
+      "rawtier": "C",
+      "year": 2024,
+      "date": "2024-06-15",
+      "city": "Nesoddtangen",
+      "cls": "Am"
+    },
+    {
+      "id": "81221",
+      "name": "Fosenkraft Open",
+      "tier": "C",
+      "rawtier": "C",
+      "year": 2024,
+      "date": "2024-06-08",
+      "city": "Brekstad",
+      "cls": "Pro-Am"
+    },
+    {
+      "id": "79136",
+      "name": "Glåmos Open - Trønder Tour 2024 Sponset av Frisbeebutikken",
+      "tier": "C",
+      "rawtier": "C",
+      "year": 2024,
+      "date": "2024-06-15",
+      "city": "GLÅMOS",
+      "cls": "Pro-Am"
+    },
+    {
+      "id": "77298",
+      "name": "Karidalen Open 2024 Presented by Alfa Discs",
+      "tier": "C",
+      "rawtier": "C",
+      "year": 2024,
+      "date": "2024-07-06",
+      "city": "Lena",
+      "cls": "Pro-Am"
+    },
+    {
+      "id": "85834",
+      "name": "Klubbmesterskap Stjørdal Frisbeeklubb 2024",
+      "tier": "C",
+      "rawtier": "C",
+      "year": 2024,
+      "date": "2024-09-28",
+      "city": "Stjørdal",
+      "cls": "Pro-Am"
+    },
+    {
+      "id": "83997",
+      "name": "Klubbmesterskap Tromsø Disksportklubb 2024",
+      "tier": "C",
+      "rawtier": "C",
+      "year": 2024,
+      "date": "2024-09-21",
+      "city": "Tromsø",
+      "cls": "Pro-Am"
+    },
+    {
+      "id": "82402",
+      "name": "Konsmoparken Open 2024",
+      "tier": "C",
+      "rawtier": "C",
+      "year": 2024,
+      "date": "2024-06-01",
+      "city": "Konsmo",
+      "cls": "Pro-Am"
+    },
+    {
+      "id": "85084",
+      "name": "Kulleseidkanalen Open 2024",
+      "tier": "C",
+      "rawtier": "C",
+      "year": 2024,
+      "date": "2024-09-21",
+      "city": "Finnås",
+      "cls": "Pro-Am"
+    },
+    {
+      "id": "81139",
+      "name": "NM for hørselshemmede og døve 2024",
+      "tier": "C",
+      "rawtier": "C",
+      "year": 2024,
+      "date": "2024-06-22",
+      "city": "Moss",
+      "cls": "Pro-Am"
+    },
+    {
+      "id": "77682",
+      "name": "Nordic Female Open 2024 sponsored by Latitude64",
+      "tier": "C",
+      "rawtier": "C",
+      "year": 2024,
+      "date": "2024-05-25",
+      "city": "Kristiansand",
+      "cls": "Pro-Am"
+    },
+    {
+      "id": "78694",
+      "name": "Nordisc Tour Hestehagen 2024 powered by Prodigy",
+      "tier": "C",
+      "rawtier": "C",
+      "year": 2024,
+      "date": "2024-06-29",
+      "city": "Tønsberg",
+      "cls": "Am"
+    },
+    {
+      "id": "78697",
+      "name": "Nordisc Tour Stovner 2024 powered by Prodigy",
+      "tier": "C",
+      "rawtier": "C",
+      "year": 2024,
+      "date": "2024-09-28",
+      "city": "Oslo",
+      "cls": "Am"
+    },
+    {
+      "id": "85379",
+      "name": "Nordnorsk Mesterskap 2024 Bodø",
+      "tier": "C",
+      "rawtier": "C",
+      "year": 2024,
+      "date": "2024-09-14",
+      "city": "Bodø",
+      "cls": "Pro-Am"
+    },
+    {
+      "id": "79092",
+      "name": "Opptur 2024 - Del 1: Flåklypa Sendeplatelag",
+      "tier": "C",
+      "rawtier": "C",
+      "year": 2024,
+      "date": "2024-05-04",
+      "city": "Lom",
+      "cls": "Pro-Am"
+    },
+    {
+      "id": "82846",
+      "name": "Romerike Cup - Jessheim Open ",
+      "tier": "C",
+      "rawtier": "C",
+      "year": 2024,
+      "date": "2024-06-08",
+      "city": "Jessheim ",
+      "cls": "Am"
+    },
+    {
+      "id": "85198",
+      "name": "Romerike Cup - Nannestad Open ",
+      "tier": "C",
+      "rawtier": "C",
+      "year": 2024,
+      "date": "2024-08-31",
+      "city": "Nannestad",
+      "cls": "Am"
+    },
+    {
+      "id": "81191",
+      "name": "Romerike Cup - Rådhusparken Open 2024",
+      "tier": "C",
+      "rawtier": "C",
+      "year": 2024,
+      "date": "2024-04-20",
+      "city": "Lørenskog",
+      "cls": "Am"
+    },
+    {
+      "id": "85831",
+      "name": "Romerike Cup - Varingskollen Open 2024",
+      "tier": "C",
+      "rawtier": "C",
+      "year": 2024,
+      "date": "2024-09-28",
+      "city": "Hakadal",
+      "cls": "Am"
+    },
+    {
+      "id": "78055",
+      "name": "Sandnes Parkettsliperi Challenge",
+      "tier": "C",
+      "rawtier": "C",
+      "year": 2024,
+      "date": "2024-03-16",
+      "city": "Sandnes",
+      "cls": "Pro-Am"
+    },
+    {
+      "id": "82883",
+      "name": "Sarpsborg Open",
+      "tier": "C",
+      "rawtier": "C",
+      "year": 2024,
+      "date": "2024-07-20",
+      "city": "Sarpsborg",
+      "cls": "Pro-Am"
+    },
+    {
+      "id": "77545",
+      "name": "Skogen Rundt 2024 presentert av Clash Discs",
+      "tier": "C",
+      "rawtier": "C",
+      "year": 2024,
+      "date": "2024-08-31",
+      "city": "Lillehammer",
+      "cls": "Pro-Am"
+    },
+    {
+      "id": "79143",
+      "name": "Steinkjer Open - Trønder Tour 2024 - Sponset av Frisbeebutikken",
+      "tier": "C",
+      "rawtier": "C",
+      "year": 2024,
+      "date": "2024-09-21",
+      "city": "Steinkjer",
+      "cls": "Pro-Am"
+    },
+    {
+      "id": "80923",
+      "name": "Tjing Open Norway 2024 presented by Discmania",
+      "tier": "C",
+      "rawtier": "C",
+      "year": 2024,
+      "date": "2024-04-13",
+      "city": "Halden",
+      "cls": "Pro-Am"
+    },
+    {
+      "id": "77297",
+      "name": "Toten Open 2024 Presented by Alfa Discs",
+      "tier": "C",
+      "rawtier": "C",
+      "year": 2024,
+      "date": "2024-06-01",
+      "city": "Lena",
+      "cls": "Pro-Am"
+    },
+    {
+      "id": "79134",
+      "name": "Trønder Tour 2024 - Hemne Open - sponset av Frisbeebutikken",
+      "tier": "C",
+      "rawtier": "C",
+      "year": 2024,
+      "date": "2024-05-25",
+      "city": "Kyrksæterøra",
+      "cls": "Pro-Am"
+    },
+    {
+      "id": "79137",
+      "name": "Trønder Tour 2024 - Oppdal Open",
+      "tier": "C",
+      "rawtier": "C",
+      "year": 2024,
+      "date": "2024-08-17",
+      "city": "Oppdal",
+      "cls": "Pro-Am"
+    },
+    {
+      "id": "78850",
+      "name": "VT TOUR 2024 presentert av DGshop.no - Hestehagen",
+      "tier": "C",
+      "rawtier": "C",
+      "year": 2024,
+      "date": "2024-08-31",
+      "city": "Barkåker",
+      "cls": "Pro-Am"
+    },
+    {
+      "id": "79541",
+      "name": "VT TOUR 2024 presentert av DGshop.no - Sande",
+      "tier": "C",
+      "rawtier": "C",
+      "year": 2024,
+      "date": "2024-04-20",
+      "city": "SANDE I VESTFOLD",
+      "cls": "Pro-Am"
+    },
+    {
+      "id": "85444",
+      "name": "Ålgård Open",
+      "tier": "C",
+      "rawtier": "C",
+      "year": 2024,
+      "date": "2024-09-14",
+      "city": "Ålgård",
+      "cls": "Pro-Am"
+    },
+    {
+      "id": "83065",
+      "name": "Ørland Open",
+      "tier": "C",
+      "rawtier": "C",
+      "year": 2024,
+      "date": "2024-09-27",
+      "city": "Opphaug",
+      "cls": "Pro-Am"
+    },
+    {
+      "id": "79652",
+      "name": "Østfold Open Woods & Greens 2024 sponset av Leif Grimsrud",
+      "tier": "C",
+      "rawtier": "C",
+      "year": 2024,
+      "date": "2024-05-04",
+      "city": "Sarpsborg",
+      "cls": "Pro-Am"
+    },
+    {
       "id": "64036",
       "name": "DGPT - ET#6 - PCS Open 2023 presented by Innova",
       "tier": "ES",
@@ -522,16 +1352,6 @@
       "cls": "Pro-Am"
     },
     {
-      "id": "66307",
-      "name": "Solør Open 2023 - Presented by WeAreDiscGolf",
-      "tier": "B",
-      "rawtier": "B",
-      "year": 2023,
-      "date": "2023-09-15",
-      "city": "Flisa",
-      "cls": "Pro-Am"
-    },
-    {
       "id": "72428",
       "name": "Ørland Open - sponsored by Frisbeebutikken",
       "tier": "B",
@@ -539,6 +1359,256 @@
       "year": 2023,
       "date": "2023-09-23",
       "city": "Opphaug",
+      "cls": "Pro-Am"
+    },
+    {
+      "id": "72651",
+      "name": "ADGT Enga",
+      "tier": "C",
+      "rawtier": "C",
+      "year": 2023,
+      "date": "2023-07-15",
+      "city": "Bodø",
+      "cls": "Pro-Am"
+    },
+    {
+      "id": "71693",
+      "name": "ADGT Heia",
+      "tier": "C",
+      "rawtier": "C",
+      "year": 2023,
+      "date": "2023-06-10",
+      "city": "Bodø",
+      "cls": "Pro-Am"
+    },
+    {
+      "id": "73545",
+      "name": "Coretto Open ",
+      "tier": "C",
+      "rawtier": "C",
+      "year": 2023,
+      "date": "2023-08-12",
+      "city": "Sandnes",
+      "cls": "Pro-Am"
+    },
+    {
+      "id": "71874",
+      "name": "Konsmoparken Open 2023",
+      "tier": "C",
+      "rawtier": "C",
+      "year": 2023,
+      "date": "2023-07-01",
+      "city": "Konsmo",
+      "cls": "Pro"
+    },
+    {
+      "id": "67034",
+      "name": "Mjøstur Del 1 - Solør og Elverum",
+      "tier": "C",
+      "rawtier": "C",
+      "year": 2023,
+      "date": "2023-04-29",
+      "city": "Flisa",
+      "cls": "Pro-Am"
+    },
+    {
+      "id": "67035",
+      "name": "Mjøstur Del 2 - Hamar og Moelv",
+      "tier": "C",
+      "rawtier": "C",
+      "year": 2023,
+      "date": "2023-05-13",
+      "city": "Lillehammer",
+      "cls": "Pro-Am"
+    },
+    {
+      "id": "67036",
+      "name": "Mjøstur Del 3 - Valdres og Lillehammer",
+      "tier": "C",
+      "rawtier": "C",
+      "year": 2023,
+      "date": "2023-06-03",
+      "city": "Hamar",
+      "cls": "Pro-Am"
+    },
+    {
+      "id": "65769",
+      "name": "Nordisc Tour Hestehagen 2023 powered by Prodigy",
+      "tier": "C",
+      "rawtier": "C",
+      "year": 2023,
+      "date": "2023-07-01",
+      "city": "Barkåker",
+      "cls": "Am"
+    },
+    {
+      "id": "69597",
+      "name": "Nordisc Tour Stovner 2023 powered by Prodigy",
+      "tier": "C",
+      "rawtier": "C",
+      "year": 2023,
+      "date": "2023-09-02",
+      "city": "Oslo",
+      "cls": "Am"
+    },
+    {
+      "id": "71360",
+      "name": "Nordisc female open",
+      "tier": "C",
+      "rawtier": "C",
+      "year": 2023,
+      "date": "2023-05-27",
+      "city": "Sandnes",
+      "cls": "Pro-Am"
+    },
+    {
+      "id": "73475",
+      "name": "Nordnorsk Mesterskap 2023",
+      "tier": "C",
+      "rawtier": "C",
+      "year": 2023,
+      "date": "2023-08-12",
+      "city": "Borg",
+      "cls": "Pro-Am"
+    },
+    {
+      "id": "73649",
+      "name": "Oslo Birdie Fest presented by Thought Space Athletics PDGA Europe Women's Event",
+      "tier": "C",
+      "rawtier": "C",
+      "year": 2023,
+      "date": "2023-09-16",
+      "city": "Oslo",
+      "cls": "Pro-Am"
+    },
+    {
+      "id": "72469",
+      "name": "Romerike Cup - Nannestad Open ",
+      "tier": "C",
+      "rawtier": "C",
+      "year": 2023,
+      "date": "2023-07-08",
+      "city": "Nannestad",
+      "cls": "Pro-Am"
+    },
+    {
+      "id": "72470",
+      "name": "Romerike Cup - Rådhusparken Open ",
+      "tier": "C",
+      "rawtier": "C",
+      "year": 2023,
+      "date": "2023-07-22",
+      "city": "Lørenskog",
+      "cls": "Pro-Am"
+    },
+    {
+      "id": "68235",
+      "name": "Skogen Rundt 2023 presentert av Clash Discs",
+      "tier": "C",
+      "rawtier": "C",
+      "year": 2023,
+      "date": "2023-09-02",
+      "city": "Lillehammer",
+      "cls": "Pro-Am"
+    },
+    {
+      "id": "66013",
+      "name": "Toten Open 2023",
+      "tier": "C",
+      "rawtier": "C",
+      "year": 2023,
+      "date": "2023-09-23",
+      "city": "Lena",
+      "cls": "Pro-Am"
+    },
+    {
+      "id": "68582",
+      "name": "Trønder Tour 2023 - Glåmos Open - Sponset av Latitude 64",
+      "tier": "C",
+      "rawtier": "C",
+      "year": 2023,
+      "date": "2023-07-01",
+      "city": "Glåmos",
+      "cls": "Pro-Am"
+    },
+    {
+      "id": "68504",
+      "name": "Trønder Tour 2023 - Hemne Open - Sponset av Latitude 64",
+      "tier": "C",
+      "rawtier": "C",
+      "year": 2023,
+      "date": "2023-05-27",
+      "city": "Kyrksæterøra",
+      "cls": "Pro-Am"
+    },
+    {
+      "id": "71243",
+      "name": "Trønder Tour 2023 - Lysøysund Open - Sponset av Latitude 64",
+      "tier": "C",
+      "rawtier": "C",
+      "year": 2023,
+      "date": "2023-08-26",
+      "city": "Lysøysundet",
+      "cls": "Pro-Am"
+    },
+    {
+      "id": "72592",
+      "name": "Trønder Tour 2023 - Oppdal Open - Sponset av Latitude 64",
+      "tier": "C",
+      "rawtier": "C",
+      "year": 2023,
+      "date": "2023-08-19",
+      "city": "Oppdal",
+      "cls": "Pro-Am"
+    },
+    {
+      "id": "72968",
+      "name": "Trønder Tour 2023 - Tillerskogen Open - Sponset av Latitude 64",
+      "tier": "C",
+      "rawtier": "C",
+      "year": 2023,
+      "date": "2023-09-09",
+      "city": "Tiller",
+      "cls": "Pro-Am"
+    },
+    {
+      "id": "69303",
+      "name": "VT Tour 2023 Presentert av Alfa Discs - Sande",
+      "tier": "C",
+      "rawtier": "C",
+      "year": 2023,
+      "date": "2023-04-22",
+      "city": "Sande",
+      "cls": "Pro-Am"
+    },
+    {
+      "id": "72064",
+      "name": "VT Tour 2023 presentert av Alfa Discs - Hestehagen / Vear",
+      "tier": "C",
+      "rawtier": "C",
+      "year": 2023,
+      "date": "2023-08-26",
+      "city": "Barkåker",
+      "cls": "Pro-Am"
+    },
+    {
+      "id": "74660",
+      "name": "Varingskollen Open",
+      "tier": "C",
+      "rawtier": "C",
+      "year": 2023,
+      "date": "2023-09-30",
+      "city": "Hakadal",
+      "cls": "Pro-Am"
+    },
+    {
+      "id": "72848",
+      "name": "Østfold Open Woods & Greens sponset av Grimsrud",
+      "tier": "C",
+      "rawtier": "C",
+      "year": 2023,
+      "date": "2023-09-23",
+      "city": "Hafslundsøy",
       "cls": "Pro-Am"
     },
     {
@@ -652,6 +1722,216 @@
       "cls": "Pro-Am"
     },
     {
+      "id": "61375",
+      "name": "Dalens herskere",
+      "tier": "C",
+      "rawtier": "C",
+      "year": 2022,
+      "date": "2022-09-03",
+      "city": "Skjetten",
+      "cls": "Am"
+    },
+    {
+      "id": "62628",
+      "name": "Kjøledisken 2022 presentert av Nordisc",
+      "tier": "C",
+      "rawtier": "C",
+      "year": 2022,
+      "date": "2022-10-08",
+      "city": "Elverum",
+      "cls": "Pro-Am"
+    },
+    {
+      "id": "60038",
+      "name": "Mjøstur 2022 Del 1 - presented by Guru Disc Golf",
+      "tier": "C",
+      "rawtier": "C",
+      "year": 2022,
+      "date": "2022-04-30",
+      "city": "Flisa",
+      "cls": "Pro-Am"
+    },
+    {
+      "id": "60358",
+      "name": "Mjøstur 2022 Del 2 - presented by Guru Disc Golf",
+      "tier": "C",
+      "rawtier": "C",
+      "year": 2022,
+      "date": "2022-05-21",
+      "city": "Hamar",
+      "cls": "Pro-Am"
+    },
+    {
+      "id": "61022",
+      "name": "Mjøstur 2022 Del 3 - presented by Guru Disc Golf",
+      "tier": "C",
+      "rawtier": "C",
+      "year": 2022,
+      "date": "2022-06-04",
+      "city": "Lillehammer",
+      "cls": "Pro-Am"
+    },
+    {
+      "id": "60807",
+      "name": "Mjøstur 2022 Del 4 - presented by Guru Disc Golf",
+      "tier": "C",
+      "rawtier": "C",
+      "year": 2022,
+      "date": "2022-08-20",
+      "city": "Toten",
+      "cls": "Pro-Am"
+    },
+    {
+      "id": "61693",
+      "name": "Mjøstur 2022 Del 5 - presented by Guru Disc Golf",
+      "tier": "C",
+      "rawtier": "C",
+      "year": 2022,
+      "date": "2022-08-27",
+      "city": "Flisa",
+      "cls": "Pro-Am"
+    },
+    {
+      "id": "64749",
+      "name": "Movember ",
+      "tier": "C",
+      "rawtier": "C",
+      "year": 2022,
+      "date": "2022-11-19",
+      "city": "Sandnes",
+      "cls": "Pro-Am"
+    },
+    {
+      "id": "56885",
+      "name": "Nordisc DGT Krokhol 2022 presented by Thought Space Athletics",
+      "tier": "C",
+      "rawtier": "C",
+      "year": 2022,
+      "date": "2022-09-24",
+      "city": "Siggerud",
+      "cls": "Pro-Am"
+    },
+    {
+      "id": "59682",
+      "name": "Rådhusparken Open - Sponset av Krokhol Disc Golf Shop",
+      "tier": "C",
+      "rawtier": "C",
+      "year": 2022,
+      "date": "2022-04-16",
+      "city": "Lørenskog ",
+      "cls": "Pro-Am"
+    },
+    {
+      "id": "62290",
+      "name": "Sandnes Open 2022",
+      "tier": "C",
+      "rawtier": "C",
+      "year": 2022,
+      "date": "2022-07-23",
+      "city": "Sandnes ",
+      "cls": "Pro-Am"
+    },
+    {
+      "id": "58586",
+      "name": "Skogen Rundt presentert av Latitude 64",
+      "tier": "C",
+      "rawtier": "C",
+      "year": 2022,
+      "date": "2022-09-03",
+      "city": "Lillehammer",
+      "cls": "Pro-Am"
+    },
+    {
+      "id": "62320",
+      "name": "The Grove - presented by Alfa Discs",
+      "tier": "C",
+      "rawtier": "C",
+      "year": 2022,
+      "date": "2022-09-03",
+      "city": "Vestfossen",
+      "cls": "Pro-Am"
+    },
+    {
+      "id": "61817",
+      "name": "Trønder Tour 2022 sponset av Latitude 64 - Ørland Sparebank Open",
+      "tier": "C",
+      "rawtier": "C",
+      "year": 2022,
+      "date": "2022-08-27",
+      "city": "Brekstad",
+      "cls": "Pro-Am"
+    },
+    {
+      "id": "61351",
+      "name": "Trønder Tour 2022 sponsored by Latitude 64 | Hemne Open",
+      "tier": "C",
+      "rawtier": "C",
+      "year": 2022,
+      "date": "2022-07-02",
+      "city": "Kyrksæterøra",
+      "cls": "Pro-Am"
+    },
+    {
+      "id": "63912",
+      "name": "Trønder Tour 2022 sponsored by Latitude 64 | Klæbu Open",
+      "tier": "C",
+      "rawtier": "C",
+      "year": 2022,
+      "date": "2022-10-08",
+      "city": "Klæbu",
+      "cls": "Pro-Am"
+    },
+    {
+      "id": "62449",
+      "name": "Trønder Tour 2022 sponsored by Latitude 64 | XXL Steinkjer Open",
+      "tier": "C",
+      "rawtier": "C",
+      "year": 2022,
+      "date": "2022-07-30",
+      "city": "STEINKJER",
+      "cls": "Pro-Am"
+    },
+    {
+      "id": "62586",
+      "name": "Trønder Tour Sponsored by Latitude 64| Trondheim Open",
+      "tier": "C",
+      "rawtier": "C",
+      "year": 2022,
+      "date": "2022-10-01",
+      "city": "Trondheim",
+      "cls": "Pro-Am"
+    },
+    {
+      "id": "61468",
+      "name": "Valstad Open - Presented by Disc golf Dynasty ",
+      "tier": "C",
+      "rawtier": "C",
+      "year": 2022,
+      "date": "2022-06-18",
+      "city": "Skjetten ",
+      "cls": "Pro-Am"
+    },
+    {
+      "id": "63787",
+      "name": "Varingskollen Open ",
+      "tier": "C",
+      "rawtier": "C",
+      "year": 2022,
+      "date": "2022-09-25",
+      "city": "Hakadal",
+      "cls": "Pro-Am"
+    },
+    {
+      "id": "63751",
+      "name": "Vestkysttouren 2022 Preikestolen",
+      "tier": "C",
+      "rawtier": "C",
+      "year": 2022,
+      "date": "2022-09-24",
+      "city": "Jørpeland",
+      "cls": "Pro-Am"
+    },
+    {
       "id": "53705",
       "name": "Karmøy Open 2021",
       "tier": "B",
@@ -712,6 +1992,136 @@
       "cls": "Pro-Am"
     },
     {
+      "id": "50098",
+      "name": "Battle Of Agder",
+      "tier": "C",
+      "rawtier": "C",
+      "year": 2021,
+      "date": "2021-09-11",
+      "city": "Kristiansand",
+      "cls": "Pro-Am"
+    },
+    {
+      "id": "49503",
+      "name": "Kjøledisken 2021 av Nordisc",
+      "tier": "C",
+      "rawtier": "C",
+      "year": 2021,
+      "date": "2021-10-16",
+      "city": "Elverum",
+      "cls": "Pro-Am"
+    },
+    {
+      "id": "52517",
+      "name": "Midt-Norsk Mesterskap",
+      "tier": "C",
+      "rawtier": "C",
+      "year": 2021,
+      "date": "2021-06-12",
+      "city": "Kristiansund",
+      "cls": "Pro-Am"
+    },
+    {
+      "id": "52641",
+      "name": "Mjøstur 2021 Del 1",
+      "tier": "C",
+      "rawtier": "C",
+      "year": 2021,
+      "date": "2021-06-19",
+      "city": "Hamar",
+      "cls": "Pro-Am"
+    },
+    {
+      "id": "52642",
+      "name": "Mjøstur 2021 Del 2",
+      "tier": "C",
+      "rawtier": "C",
+      "year": 2021,
+      "date": "2021-08-14",
+      "city": "Hamar",
+      "cls": "Pro-Am"
+    },
+    {
+      "id": "52643",
+      "name": "Mjøstur 2021 Del 3",
+      "tier": "C",
+      "rawtier": "C",
+      "year": 2021,
+      "date": "2021-09-11",
+      "city": "Hamar",
+      "cls": "Pro-Am"
+    },
+    {
+      "id": "53850",
+      "name": "Norwegian Masters 2021",
+      "tier": "C",
+      "rawtier": "C",
+      "year": 2021,
+      "date": "2021-08-14",
+      "city": "SANDNES",
+      "cls": "Pro-Am"
+    },
+    {
+      "id": "53946",
+      "name": "Oslo Amateur Open 2021 - Presented by INNOVA Champion Discs",
+      "tier": "C",
+      "rawtier": "C",
+      "year": 2021,
+      "date": "2021-08-28",
+      "city": "Oslo",
+      "cls": "Am"
+    },
+    {
+      "id": "53162",
+      "name": "Skogen Rundt",
+      "tier": "C",
+      "rawtier": "C",
+      "year": 2021,
+      "date": "2021-08-28",
+      "city": "Lillehammer",
+      "cls": "Pro-Am"
+    },
+    {
+      "id": "51575",
+      "name": "Toten Open 2021",
+      "tier": "C",
+      "rawtier": "C",
+      "year": 2021,
+      "date": "2021-05-08",
+      "city": "Lena",
+      "cls": "Pro-Am"
+    },
+    {
+      "id": "52864",
+      "name": "Trønder Tour 2021 presented by Latitude 64 | Hemne Open",
+      "tier": "C",
+      "rawtier": "C",
+      "year": 2021,
+      "date": "2021-07-24",
+      "city": "Hemne",
+      "cls": "Pro-Am"
+    },
+    {
+      "id": "53500",
+      "name": "Trønder Tour 2021 presented by Latitude 64 | Ørland Sparebank Open",
+      "tier": "C",
+      "rawtier": "C",
+      "year": 2021,
+      "date": "2021-08-28",
+      "city": "Ørland",
+      "cls": "Pro-Am"
+    },
+    {
+      "id": "53491",
+      "name": "Varingskollen Open",
+      "tier": "C",
+      "rawtier": "C",
+      "year": 2021,
+      "date": "2021-09-04",
+      "city": "Hakadal",
+      "cls": "Pro-Am"
+    },
+    {
       "id": "46381",
       "name": "Norgesmesterskap i Diskgolf 2020 sponsored by Latitude 64",
       "tier": "B",
@@ -759,6 +2169,56 @@
       "year": 2020,
       "date": "2020-09-12",
       "city": "Tveit",
+      "cls": "Pro-Am"
+    },
+    {
+      "id": "47329",
+      "name": "Kjøledisken 2020 av Nordisc",
+      "tier": "C",
+      "rawtier": "C",
+      "year": 2020,
+      "date": "2020-10-17",
+      "city": "Elverum",
+      "cls": "Pro-Am"
+    },
+    {
+      "id": "45919",
+      "name": "Mjøstur 2020 Part 1",
+      "tier": "C",
+      "rawtier": "C",
+      "year": 2020,
+      "date": "2020-06-20",
+      "city": "Hamar",
+      "cls": "Pro-Am"
+    },
+    {
+      "id": "45952",
+      "name": "Mjøstur 2020 Part 2",
+      "tier": "C",
+      "rawtier": "C",
+      "year": 2020,
+      "date": "2020-08-15",
+      "city": "Hamar",
+      "cls": "Pro-Am"
+    },
+    {
+      "id": "46858",
+      "name": "Oslo Tour Krokhol 2020 presented by Latitude 64",
+      "tier": "C",
+      "rawtier": "C",
+      "year": 2020,
+      "date": "2020-08-22",
+      "city": "Siggerud",
+      "cls": "Pro-Am"
+    },
+    {
+      "id": "45689",
+      "name": "Vasset Open presentert av Sparebanken Møre",
+      "tier": "C",
+      "rawtier": "C",
+      "year": 2020,
+      "date": "2020-07-03",
+      "city": "LANGEVAAG",
       "cls": "Pro-Am"
     },
     {
@@ -822,6 +2282,76 @@
       "cls": "Pro-Am"
     },
     {
+      "id": "41406",
+      "name": "Dragvoll Amateur Open 2019",
+      "tier": "C",
+      "rawtier": "C",
+      "year": 2019,
+      "date": "2019-06-01",
+      "city": "Trondheim",
+      "cls": "Am"
+    },
+    {
+      "id": "40156",
+      "name": "Dynamic Discs 1st Oslo Disc Golf Classic presented by NBDG",
+      "tier": "C",
+      "rawtier": "C",
+      "year": 2019,
+      "date": "2019-08-31",
+      "city": "Oslo",
+      "cls": "Pro-Am"
+    },
+    {
+      "id": "41551",
+      "name": "Mjøstur 2019 Del 1",
+      "tier": "C",
+      "rawtier": "C",
+      "year": 2019,
+      "date": "2019-06-22",
+      "city": "Hamar",
+      "cls": "Pro-Am"
+    },
+    {
+      "id": "41552",
+      "name": "Mjøstur 2019 del 2",
+      "tier": "C",
+      "rawtier": "C",
+      "year": 2019,
+      "date": "2019-08-10",
+      "city": "Hamar",
+      "cls": "Pro-Am"
+    },
+    {
+      "id": "41186",
+      "name": "Oslo Tour Krokhol 2019 presented by Latitude 64",
+      "tier": "C",
+      "rawtier": "C",
+      "year": 2019,
+      "date": "2019-10-05",
+      "city": "Siggerud",
+      "cls": "Pro-Am"
+    },
+    {
+      "id": "41992",
+      "name": "PCS Open 2019",
+      "tier": "C",
+      "rawtier": "C",
+      "year": 2019,
+      "date": "2019-09-13",
+      "city": "Vestnes",
+      "cls": "Pro-Am"
+    },
+    {
+      "id": "42297",
+      "name": "Trønder Tour 2019 presented by Latitude 64 | Selbu Open",
+      "tier": "C",
+      "rawtier": "C",
+      "year": 2019,
+      "date": "2019-08-10",
+      "city": "Selbu",
+      "cls": "Pro-Am"
+    },
+    {
       "id": "34714",
       "name": "Sula Open 2018 presented by Discmania - EPT#2",
       "tier": "A",
@@ -879,6 +2409,76 @@
       "year": 2018,
       "date": "2018-09-01",
       "city": "Tveit",
+      "cls": "Pro-Am"
+    },
+    {
+      "id": "35216",
+      "name": "39th annual Maigolfen",
+      "tier": "C",
+      "rawtier": "C",
+      "year": 2018,
+      "date": "2018-05-11",
+      "city": "Oslo",
+      "cls": "Pro-Am"
+    },
+    {
+      "id": "38264",
+      "name": "Klubbmesterskap Stjørdal Frisbeeklubb 2018",
+      "tier": "C",
+      "rawtier": "C",
+      "year": 2018,
+      "date": "2018-10-06",
+      "city": "HELL",
+      "cls": "Pro-Am"
+    },
+    {
+      "id": "37227",
+      "name": "Mjøstur 2018 Hedmark",
+      "tier": "C",
+      "rawtier": "C",
+      "year": 2018,
+      "date": "2018-08-11",
+      "city": "Hamar",
+      "cls": "Pro-Am"
+    },
+    {
+      "id": "37228",
+      "name": "Mjøstur 2018 Oppland",
+      "tier": "C",
+      "rawtier": "C",
+      "year": 2018,
+      "date": "2018-08-25",
+      "city": "Hamar",
+      "cls": "Pro-Am"
+    },
+    {
+      "id": "36685",
+      "name": "PCS Open 2018",
+      "tier": "C",
+      "rawtier": "C",
+      "year": 2018,
+      "date": "2018-09-14",
+      "city": "Vestnes",
+      "cls": "Pro-Am"
+    },
+    {
+      "id": "38300",
+      "name": "Pancake amateur open 2018",
+      "tier": "C",
+      "rawtier": "C",
+      "year": 2018,
+      "date": "2018-09-15",
+      "city": "Oslo",
+      "cls": "Pro-Am"
+    },
+    {
+      "id": "36778",
+      "name": "Trønder Tour 2018 presented by Latitude 64 | Dragvoll Open",
+      "tier": "C",
+      "rawtier": "C",
+      "year": 2018,
+      "date": "2018-05-12",
+      "city": "Trondheim",
       "cls": "Pro-Am"
     },
     {
@@ -942,6 +2542,56 @@
       "cls": "Pro-Am"
     },
     {
+      "id": "31189",
+      "name": "Beisfjord Amateur Open 2017 Sponsored by Dynamic Discs",
+      "tier": "C",
+      "rawtier": "C",
+      "year": 2017,
+      "date": "2017-09-09",
+      "city": "Beisfjord",
+      "cls": "Am"
+    },
+    {
+      "id": "32216",
+      "name": "Mjøstur 2017",
+      "tier": "C",
+      "rawtier": "C",
+      "year": 2017,
+      "date": "2017-05-13",
+      "city": "Hamar",
+      "cls": "Pro-Am"
+    },
+    {
+      "id": "30567",
+      "name": "Oslo Tour Stovner 2017 presented by Latitude 64",
+      "tier": "C",
+      "rawtier": "C",
+      "year": 2017,
+      "date": "2017-07-08",
+      "city": "Oslo",
+      "cls": "Pro-Am"
+    },
+    {
+      "id": "33853",
+      "name": "Pancake Amateur Open",
+      "tier": "C",
+      "rawtier": "C",
+      "year": 2017,
+      "date": "2017-09-16",
+      "city": "Oslo",
+      "cls": "Pro-Am"
+    },
+    {
+      "id": "32237",
+      "name": "Rogaland Open",
+      "tier": "C",
+      "rawtier": "C",
+      "year": 2017,
+      "date": "2017-07-15",
+      "city": "Sandnes",
+      "cls": "Pro-Am"
+    },
+    {
       "id": "28407",
       "name": "Trondheim Prodiscus Open",
       "tier": "A",
@@ -979,6 +2629,26 @@
       "year": 2016,
       "date": "2016-08-06",
       "city": "Skien",
+      "cls": "Pro-Am"
+    },
+    {
+      "id": "27117",
+      "name": "Arendal Open",
+      "tier": "C",
+      "rawtier": "C",
+      "year": 2016,
+      "date": "2016-05-21",
+      "city": "Arendal",
+      "cls": "Pro-Am"
+    },
+    {
+      "id": "26353",
+      "name": "Kristiansand Open",
+      "tier": "C",
+      "rawtier": "C",
+      "year": 2016,
+      "date": "2016-04-23",
+      "city": "Kristiansand",
       "cls": "Pro-Am"
     },
     {
@@ -1042,6 +2712,16 @@
       "cls": "Pro-Am"
     },
     {
+      "id": "20559",
+      "name": "Kristiansand Open",
+      "tier": "C",
+      "rawtier": "C",
+      "year": 2015,
+      "date": "2015-08-15",
+      "city": "Kristiansand",
+      "cls": "Pro-Am"
+    },
+    {
       "id": "17809",
       "name": "Arendal Open",
       "tier": "A",
@@ -1092,6 +2772,16 @@
       "cls": "Pro-Am"
     },
     {
+      "id": "17693",
+      "name": "Kristiansund Open",
+      "tier": "C",
+      "rawtier": "C",
+      "year": 2014,
+      "date": "2014-06-14",
+      "city": "Kristiansund",
+      "cls": "Pro-Am"
+    },
+    {
       "id": "15384",
       "name": "Bergen Open",
       "tier": "B",
@@ -1119,26 +2809,6 @@
       "year": 2013,
       "date": "2013-08-16",
       "city": "Skien",
-      "cls": "Pro-Am"
-    },
-    {
-      "id": "15385",
-      "name": "Stovnerputten 2013",
-      "tier": "B",
-      "rawtier": "B",
-      "year": 2013,
-      "date": "2013-06-22",
-      "city": "Oslo",
-      "cls": "Pro-Am"
-    },
-    {
-      "id": "13921",
-      "name": "Norwegian Championship",
-      "tier": "A",
-      "rawtier": "XA",
-      "year": 2012,
-      "date": "2012-08-03",
-      "city": "Arendal",
       "cls": "Pro-Am"
     },
     {
@@ -1172,16 +2842,6 @@
       "cls": "Pro-Am"
     },
     {
-      "id": "14143",
-      "name": "Skien Open",
-      "tier": "B",
-      "rawtier": "B",
-      "year": 2012,
-      "date": "2012-09-01",
-      "city": "Skien",
-      "cls": "Pro-Am"
-    },
-    {
       "id": "12711",
       "name": "Sula Open",
       "tier": "B",
@@ -1202,16 +2862,6 @@
       "cls": "Pro-Am"
     },
     {
-      "id": "12064",
-      "name": "Arendal Open",
-      "tier": "B",
-      "rawtier": "B",
-      "year": 2011,
-      "date": "2011-06-25",
-      "city": "Eydehavn",
-      "cls": "Pro-Am"
-    },
-    {
       "id": "11780",
       "name": "Bergen Open",
       "tier": "B",
@@ -1219,16 +2869,6 @@
       "year": 2011,
       "date": "2011-04-09",
       "city": "Bergen",
-      "cls": "Pro-Am"
-    },
-    {
-      "id": "12065",
-      "name": "Bodø open",
-      "tier": "B",
-      "rawtier": "B",
-      "year": 2011,
-      "date": "2011-07-09",
-      "city": "Bodø",
       "cls": "Pro-Am"
     },
     {
@@ -1362,6 +3002,126 @@
       "cls": "Pro-Am"
     },
     {
+      "id": "7791",
+      "name": "Bergen Open",
+      "tier": "C",
+      "rawtier": "C",
+      "year": 2008,
+      "date": "2008-04-19",
+      "city": "Bergen",
+      "cls": "Pro-Am"
+    },
+    {
+      "id": "8135",
+      "name": "Haugaland Open",
+      "tier": "C",
+      "rawtier": "C",
+      "year": 2008,
+      "date": "2008-10-25",
+      "city": "Haugesund",
+      "cls": "Pro-Am"
+    },
+    {
+      "id": "7792",
+      "name": "Maigolfen",
+      "tier": "C",
+      "rawtier": "C",
+      "year": 2008,
+      "date": "2008-05-03",
+      "city": "Oslo",
+      "cls": "Pro-Am"
+    },
+    {
+      "id": "7795",
+      "name": "NM/Arendal Open",
+      "tier": "C",
+      "rawtier": "C",
+      "year": 2008,
+      "date": "2008-09-06",
+      "city": "Eidehavn",
+      "cls": "Pro-Am"
+    },
+    {
+      "id": "7793",
+      "name": "Sula Open",
+      "tier": "C",
+      "rawtier": "C",
+      "year": 2008,
+      "date": "2008-05-31",
+      "city": "Sula",
+      "cls": "Pro-Am"
+    },
+    {
+      "id": "7794",
+      "name": "Tonsberg Open",
+      "tier": "C",
+      "rawtier": "C",
+      "year": 2008,
+      "date": "2008-08-16",
+      "city": "Tonsburg",
+      "cls": "Pro-Am"
+    },
+    {
+      "id": "6806",
+      "name": "Maigolfen",
+      "tier": "C",
+      "rawtier": "C",
+      "year": 2007,
+      "date": "2007-05-12",
+      "city": "Oslo",
+      "cls": "Pro-Am"
+    },
+    {
+      "id": "6809",
+      "name": "NM/Arendal Open",
+      "tier": "C",
+      "rawtier": "C",
+      "year": 2007,
+      "date": "2007-09-01",
+      "city": "Eydehavn",
+      "cls": "Pro-Am"
+    },
+    {
+      "id": "6807",
+      "name": "Sula Open",
+      "tier": "C",
+      "rawtier": "C",
+      "year": 2007,
+      "date": "2007-06-02",
+      "city": "Sula",
+      "cls": "Pro-Am"
+    },
+    {
+      "id": "6808",
+      "name": "Tønsberg Open",
+      "tier": "C",
+      "rawtier": "C",
+      "year": 2007,
+      "date": "2007-06-30",
+      "city": "Tønsberg",
+      "cls": "Pro-Am"
+    },
+    {
+      "id": "6805",
+      "name": "Åpent Trøndersk",
+      "tier": "C",
+      "rawtier": "C",
+      "year": 2007,
+      "date": "2007-04-21",
+      "city": "Trondheim",
+      "cls": "Pro-Am"
+    },
+    {
+      "id": "6189",
+      "name": "Apent Trondevsk",
+      "tier": "C",
+      "rawtier": "C",
+      "year": 2006,
+      "date": "2006-09-02",
+      "city": "Trondheim",
+      "cls": "Pro-Am"
+    },
+    {
       "id": "5135",
       "name": "Oslo Open",
       "tier": "B",
@@ -1388,6 +3148,16 @@
       "rawtier": "B",
       "year": 2001,
       "date": "2001-06-01",
+      "city": "Oslo",
+      "cls": "Pro-Am"
+    },
+    {
+      "id": "35965",
+      "name": "Oslo Open",
+      "tier": "C",
+      "rawtier": "C",
+      "year": 2000,
+      "date": "2000-05-27",
       "city": "Oslo",
       "cls": "Pro-Am"
     }

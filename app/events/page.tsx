@@ -3,6 +3,7 @@ import events from "@/data/events-summary.json";
 import eventsNamed from "@/data/events-named.json";
 import EventsChart, { EventsSummary } from "@/components/EventsChart";
 import EventsTable, { NamedEvent } from "@/components/EventsTable";
+import EventsYearlyTable from "@/components/EventsYearlyTable";
 
 export const metadata: Metadata = {
   title: "Turneringer arrangert i Norge",
@@ -31,6 +32,13 @@ export default function TurneringerPage() {
           </span>
         </div>
         <EventsChart data={data} />
+      </section>
+
+      <section style={{ marginTop: 32 }}>
+        <div className="sec-head">
+          <h2>Årstabell for turneringer</h2>
+        </div>
+        <EventsYearlyTable rows={data.by_year} levels={data.levels} />
       </section>
 
       <section style={{ marginTop: 40 }}>

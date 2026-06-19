@@ -6,7 +6,7 @@ import { usePathname } from "next/navigation";
 import { Menu, X } from "lucide-react";
 
 const NAV_ITEMS = [
-  { href: "/", label: "Oversikt" },
+  { href: "/", label: "Forside" },
   { href: "/statistikk", label: "År for år" },
   { href: "/topp", label: "Mest aktive" },
   { href: "/topp5ar", label: "Siste 5 år" },
