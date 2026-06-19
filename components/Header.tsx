@@ -9,8 +9,9 @@ const NAV_ITEMS = [
   { href: "/", label: "Oversikt" },
   { href: "/statistikk", label: "År for år" },
   { href: "/topp", label: "Mest aktive" },
+  { href: "/topp5ar", label: "Siste 5 år" },
   { href: "/veteraner", label: "Veteraner" },
-  { href: "/heatmap", label: "Heatmap" },
+  { href: "/heatmap", label: "Spillerdetaljer" },
   { href: "/events", label: "Turneringer" },
   { href: "/historie", label: "Historie" },
 ];
