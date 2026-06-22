@@ -3,7 +3,7 @@ const isProd = process.env.NODE_ENV === "production";
 
 const nextConfig = {
   reactStrictMode: true,
-  ...(isProd && { output: "export", basePath: "/dgno" }),
+  output: "export",
   images: { unoptimized: true },
 };
 
