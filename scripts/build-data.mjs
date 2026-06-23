@@ -16,11 +16,14 @@ import { fileURLToPath } from "node:url";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const ROOT = path.resolve(__dirname, "..");
-const rawPath = process.argv[2] || path.join(ROOT, "raw", "pdga_norge_alle.json");
+const rawPath =
+  process.argv[2] || path.join(ROOT, "raw", "pdga_norge_alle.json");
 
 if (!fs.existsSync(rawPath)) {
   console.error(`Fant ikke rådatafil: ${rawPath}`);
-  console.error("Kjør PDGA-hentingen først, og legg fila i ./raw/ (eller oppgi sti som argument).");
+  console.error(
+    "Kjør PDGA-hentingen først, og legg fila i ./raw/ (eller oppgi sti som argument).",
+  );
   process.exit(1);
 }
 
@@ -36,7 +39,8 @@ for (const p of rows) {
   const div = p.division_code || "?";
   const t = parseInt(p.tournaments || "0", 10) || 0;
   perDiv.set(`${pdga}|${yr}|${div}`, t);
-  const nm = `${(p.first_name || "").trim()} ${(p.last_name || "").trim()}`.trim();
+  const nm =
+    `${(p.first_name || "").trim()} ${(p.last_name || "").trim()}`.trim();
   const cur = name.get(pdga);
   if (!cur || yr >= cur.year) name.set(pdga, { year: yr, name: nm });
 }
@@ -49,9 +53,9 @@ for (const [key, t] of perDiv) {
   tour.set(k, (tour.get(k) || 0) + t);
 }
 
-const allYears = [...new Set([...tour.keys()].map((k) => +k.split("|")[1]))].sort(
-  (a, b) => a - b
-);
+const allYears = [
+  ...new Set([...tour.keys()].map((k) => +k.split("|")[1])),
+].sort((a, b) => a - b);
 const y0 = allYears[0];
 const y1 = allYears[allYears.length - 1];
 const years = [];
@@ -77,13 +81,20 @@ for (const [k, t] of tour) {
 // Compute longest streak and active streak for each player
 const streakInfo = new Map(); // pdga -> { max, maxFrom, maxTo, active }
 for (const pdga of pdgas) {
-  let maxStreak = 0, maxFrom = 0, maxTo = 0;
-  let cur = 0, curFrom = 0;
+  let maxStreak = 0,
+    maxFrom = 0,
+    maxTo = 0;
+  let cur = 0,
+    curFrom = 0;
   for (const yr of years) {
     if ((tour.get(`${pdga}|${yr}`) || 0) > 0) {
       if (cur === 0) curFrom = yr;
       cur++;
-      if (cur > maxStreak) { maxStreak = cur; maxFrom = curFrom; maxTo = yr; }
+      if (cur > maxStreak) {
+        maxStreak = cur;
+        maxFrom = curFrom;
+        maxTo = yr;
+      }
     } else {
       cur = 0;
     }
@@ -111,16 +122,16 @@ players.sort((a, b) => b.total - a.total || a.name.localeCompare(b.name));
 
 // Per-year aggregates
 const yrPlayers = years.map(
-  (y) => pdgas.filter((pd) => (tour.get(`${pd}|${y}`) || 0) > 0).length
+  (y) => pdgas.filter((pd) => (tour.get(`${pd}|${y}`) || 0) > 0).length,
 );
 const yrTour = years.map((y) =>
-  pdgas.reduce((s, pd) => s + (tour.get(`${pd}|${y}`) || 0), 0)
+  pdgas.reduce((s, pd) => s + (tour.get(`${pd}|${y}`) || 0), 0),
 );
 const yrNew = years.map(
-  (y) => pdgas.filter((pd) => firstYr.get(pd) === y).length
+  (y) => pdgas.filter((pd) => firstYr.get(pd) === y).length,
 );
 const yrAvg = years.map((y, i) =>
-  yrPlayers[i] > 0 ? Math.round((yrTour[i] / yrPlayers[i]) * 10) / 10 : 0
+  yrPlayers[i] > 0 ? Math.round((yrTour[i] / yrPlayers[i]) * 10) / 10 : 0,
 );
 
 // Top 5 players per year (for chart tooltip)
@@ -157,7 +168,14 @@ function sliceWithTies(array, valueKey, limit = 20) {
 }
 
 const summary = {
-  agg: { years, yr_players: yrPlayers, yr_tour: yrTour, yr_new: yrNew, yr_avg: yrAvg, yr_top5: yrTop5 },
+  agg: {
+    years,
+    yr_players: yrPlayers,
+    yr_tour: yrTour,
+    yr_new: yrNew,
+    yr_avg: yrAvg,
+    yr_top5: yrTop5,
+  },
   meta: {
     n_players: players.length,
     total_entries: totalEntries,
@@ -166,7 +184,7 @@ const summary = {
     peak_year: peakYear,
     players_2025: yrPlayers[years.indexOf(2025)] ?? 0,
   },
-  top: sliceWithTies(players, 'total', 20).map((p) => ({
+  top: sliceWithTies(players, "total", 20).map((p) => ({
     pdga: p.pdga,
     name: p.name,
     total: p.total,
@@ -175,37 +193,59 @@ const summary = {
   })),
   topSeasons: sliceWithTies(
     [...players].sort((a, b) => b.seasons - a.seasons || b.total - a.total),
-    'seasons',
-    20
+    "seasons",
+    20,
   ).map((p) => ({
-    pdga: p.pdga, name: p.name, seasons: p.seasons, total: p.total, first: p.first, last: p.last,
+    pdga: p.pdga,
+    name: p.name,
+    seasons: p.seasons,
+    total: p.total,
+    first: p.first,
+    last: p.last,
   })),
   topStreaks: sliceWithTies(
     [...players].sort((a, b) => b.streak - a.streak || b.seasons - a.seasons),
-    'streak',
-    20
+    "streak",
+    20,
   ).map((p) => {
     const si = streakInfo.get(p.pdga);
-    return { pdga: p.pdga, name: p.name, streak: p.streak, seasons: p.seasons, streakFrom: si.maxFrom, streakTo: si.maxTo };
+    return {
+      pdga: p.pdga,
+      name: p.name,
+      streak: p.streak,
+      seasons: p.seasons,
+      streakFrom: si.maxFrom,
+      streakTo: si.maxTo,
+    };
   }),
   topActiveStreaks: sliceWithTies(
     [...players]
       .map((p) => ({ ...p, activeStreak: streakInfo.get(p.pdga)?.active || 0 }))
       .filter((p) => p.activeStreak > 0)
       .sort((a, b) => b.activeStreak - a.activeStreak || b.seasons - a.seasons),
-    'activeStreak',
-    20
+    "activeStreak",
+    20,
   ).map((p) => ({
-    pdga: p.pdga, name: p.name, activeStreak: p.activeStreak, seasons: p.seasons, first: p.first, last: p.last,
+    pdga: p.pdga,
+    name: p.name,
+    activeStreak: p.activeStreak,
+    seasons: p.seasons,
+    first: p.first,
+    last: p.last,
   })),
 };
 
 fs.mkdirSync(path.join(ROOT, "public", "data"), { recursive: true });
 fs.writeFileSync(
   path.join(ROOT, "public", "data", "players.json"),
-  JSON.stringify(playersData)
+  JSON.stringify(playersData),
 );
-fs.writeFileSync(path.join(ROOT, "data", "summary.json"), JSON.stringify(summary));
+fs.writeFileSync(
+  path.join(ROOT, "data", "summary.json"),
+  JSON.stringify(summary),
+);
 
-console.log(`OK: ${players.length} spillere, ${y0}–${y1}, ${totalEntries} deltakelser`);
+console.log(
+  `OK: ${players.length} spillere, ${y0}–${y1}, ${totalEntries} deltakelser`,
+);
 console.log("Skrev public/data/players.json og data/summary.json");

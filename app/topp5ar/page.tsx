@@ -56,7 +56,7 @@ export default function Topp5ArPage() {
       }))
       .filter((p) => p.total > 0)
       .sort((a, b) => b.total - a.total),
-    20
+    20,
   );
 
   const top: TopPlayer[] = topRecent.map((p) => ({

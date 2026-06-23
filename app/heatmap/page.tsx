@@ -11,8 +11,8 @@ export default function HeatmapPage() {
       <div className="page-header">
         <h1>Deltakelser per spiller per år</h1>
         <p className="lede">
-          Komplett oversikt over antall turneringer spilt per spiller per år. Søk,
-          sorter og utforsk datene.
+          Komplett oversikt over antall turneringer spilt per spiller per år.
+          Søk, sorter og utforsk datene.
         </p>
       </div>
 
