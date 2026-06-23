@@ -164,7 +164,7 @@ export default function EventsTable({ events }: { events: NamedEvent[] }) {
       </div>
 
       <div className="ev-foot">
-        viser {nf(list.length)} av {nf(events.length)} turneringer
+        viser {nf(list.length)} av {nf(events.length)} navngitte turneringer (ES, A, B-tier)
       </div>
     </div>
   );

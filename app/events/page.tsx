@@ -27,8 +27,7 @@ export default function TurneringerPage() {
       <section>
         <div className="sec-head">
           <span className="note">
-            hold over en søyle for fordeling per nivå · avlyste turneringer er
-            holdt utenfor
+            hold over en søyle for fordeling per nivå
           </span>
         </div>
         <EventsChart data={data} />

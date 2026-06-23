@@ -7,7 +7,7 @@ export default function TopBars({
   top: TopPlayer[];
   showActiveYears?: boolean;
 }) {
-  const players = top.slice(0, 20);
+  const players = top; // Don't slice; data may include ties
   const mx = players[0]?.total ?? 1;
   const ranks: number[] = [];
   for (let i = 0; i < players.length; i++) {

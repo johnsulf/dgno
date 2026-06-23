@@ -144,6 +144,18 @@ yrPlayers.forEach((n, i) => {
 });
 
 const playersData = { years, players };
+
+// Helper: include all ties at the cutoff position
+function sliceWithTies(array, valueKey, limit = 20) {
+  if (array.length <= limit) return array;
+  const cutoffValue = array[limit - 1][valueKey];
+  let idx = limit;
+  while (idx < array.length && array[idx][valueKey] === cutoffValue) {
+    idx++;
+  }
+  return array.slice(0, idx);
+}
+
 const summary = {
   agg: { years, yr_players: yrPlayers, yr_tour: yrTour, yr_new: yrNew, yr_avg: yrAvg, yr_top5: yrTop5 },
   meta: {
@@ -154,28 +166,38 @@ const summary = {
     peak_year: peakYear,
     players_2025: yrPlayers[years.indexOf(2025)] ?? 0,
   },
-  top: players.slice(0, 20).map((p) => ({
+  top: sliceWithTies(players, 'total', 20).map((p) => ({
     pdga: p.pdga,
     name: p.name,
     total: p.total,
     first: p.first,
     last: p.last,
   })),
-  topSeasons: [...players].sort((a, b) => b.seasons - a.seasons || b.total - a.total).slice(0, 20).map((p) => ({
+  topSeasons: sliceWithTies(
+    [...players].sort((a, b) => b.seasons - a.seasons || b.total - a.total),
+    'seasons',
+    20
+  ).map((p) => ({
     pdga: p.pdga, name: p.name, seasons: p.seasons, total: p.total, first: p.first, last: p.last,
   })),
-  topStreaks: [...players].sort((a, b) => b.streak - a.streak || b.seasons - a.seasons).slice(0, 20).map((p) => {
+  topStreaks: sliceWithTies(
+    [...players].sort((a, b) => b.streak - a.streak || b.seasons - a.seasons),
+    'streak',
+    20
+  ).map((p) => {
     const si = streakInfo.get(p.pdga);
     return { pdga: p.pdga, name: p.name, streak: p.streak, seasons: p.seasons, streakFrom: si.maxFrom, streakTo: si.maxTo };
   }),
-  topActiveStreaks: [...players]
-    .map((p) => ({ ...p, activeStreak: streakInfo.get(p.pdga)?.active || 0 }))
-    .filter((p) => p.activeStreak > 0)
-    .sort((a, b) => b.activeStreak - a.activeStreak || b.seasons - a.seasons)
-    .slice(0, 20)
-    .map((p) => ({
-      pdga: p.pdga, name: p.name, activeStreak: p.activeStreak, seasons: p.seasons, first: p.first, last: p.last,
-    })),
+  topActiveStreaks: sliceWithTies(
+    [...players]
+      .map((p) => ({ ...p, activeStreak: streakInfo.get(p.pdga)?.active || 0 }))
+      .filter((p) => p.activeStreak > 0)
+      .sort((a, b) => b.activeStreak - a.activeStreak || b.seasons - a.seasons),
+    'activeStreak',
+    20
+  ).map((p) => ({
+    pdga: p.pdga, name: p.name, activeStreak: p.activeStreak, seasons: p.seasons, first: p.first, last: p.last,
+  })),
 };
 
 fs.mkdirSync(path.join(ROOT, "public", "data"), { recursive: true });

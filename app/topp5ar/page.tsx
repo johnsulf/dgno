@@ -19,6 +19,16 @@ type PlayerRecent = {
   total: number;
 };
 
+function sliceWithTies(arr: PlayerRecent[], limit = 20): PlayerRecent[] {
+  if (arr.length <= limit) return arr;
+  const cutoffValue = arr[limit - 1].total;
+  let idx = limit;
+  while (idx < arr.length && arr[idx].total === cutoffValue) {
+    idx++;
+  }
+  return arr.slice(0, idx);
+}
+
 export default function Topp5ArPage() {
   const years: number[] = playersData.years;
   const recentYears = years.slice(-LAST_N);
@@ -26,26 +36,28 @@ export default function Topp5ArPage() {
   const fromYear = years[startIdx];
   const toYear = years[years.length - 1];
 
-  const topRecent: PlayerRecent[] = (
-    playersData.players as {
-      pdga: string;
-      name: string;
-      first: number | null;
-      last: number | null;
-      y: number[];
-    }[]
-  )
-    .map((p) => ({
-      pdga: p.pdga,
-      name: p.name,
-      first: p.first,
-      last: p.last,
-      recent: p.y.slice(startIdx),
-      total: p.y.slice(startIdx).reduce((s, v) => s + v, 0),
-    }))
-    .filter((p) => p.total > 0)
-    .sort((a, b) => b.total - a.total)
-    .slice(0, 20);
+  const topRecent: PlayerRecent[] = sliceWithTies(
+    (
+      playersData.players as {
+        pdga: string;
+        name: string;
+        first: number | null;
+        last: number | null;
+        y: number[];
+      }[]
+    )
+      .map((p) => ({
+        pdga: p.pdga,
+        name: p.name,
+        first: p.first,
+        last: p.last,
+        recent: p.y.slice(startIdx),
+        total: p.y.slice(startIdx).reduce((s, v) => s + v, 0),
+      }))
+      .filter((p) => p.total > 0)
+      .sort((a, b) => b.total - a.total),
+    20
+  );
 
   const top: TopPlayer[] = topRecent.map((p) => ({
     pdga: p.pdga,
