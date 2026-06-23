@@ -9,7 +9,6 @@ const NAV_ITEMS = [
   { href: "/", label: "Forside" },
   { href: "/statistikk", label: "Antall spillere" },
   { href: "/topp", label: "Mest aktive" },
-  { href: "/topp5ar", label: "Siste 5 år" },
   { href: "/veteraner", label: "Veteraner" },
   { href: "/heatmap", label: "Spillerdetaljer" },
   { href: "/events", label: "Turneringer" },
