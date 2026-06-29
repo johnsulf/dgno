@@ -53,12 +53,6 @@ export default function EventsChart({ data }: { data: EventsSummary }) {
     .map((d) => d.year)
     .filter((yr) => yr % 5 === 0);
 
-  const sub = `Fra de første sanksjonerte turneringene rundt ${data.meta.first_year} til ${nf(
-    data.meta.peak_count
-  )} i ${data.meta.peak_year} - ${nf(
-    data.meta.n_events
-  )} totalt, dominert av C-tier.`;
-
   const [hoverIdx, setHoverIdx] = useState<number | null>(null);
   const svgRef = useRef<SVGSVGElement>(null);
 
@@ -80,7 +74,6 @@ export default function EventsChart({ data }: { data: EventsSummary }) {
   return (
     <div className="chartcard">
       <h2>Turneringer arrangert i Norge per år</h2>
-      <p className="sub">{sub}</p>
       <div className="chart-container">
         <svg
           ref={svgRef}

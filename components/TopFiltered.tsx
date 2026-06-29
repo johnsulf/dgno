@@ -183,18 +183,13 @@ export default function TopFiltered() {
       </div>
 
       <section>
-        <div className="sec-head">
-          <span className="note">
-            flest turneringer, alle divisjoner, {periodLabel}
-          </span>
-        </div>
         <TopBars top={top} showActiveYears={mode === "total"} />
       </section>
 
       <section style={{ marginTop: 32 }}>
         <div className="sec-head">
           <span className="note">
-            tabellvisning{filteredYears.length > 1 ? ` per år (${periodLabel})` : ` (${periodLabel})`} for topp 20
+            Tabellvisning{filteredYears.length > 1 ? ` per år (${periodLabel})` : ` (${periodLabel})`} for topp 20
           </span>
         </div>
         <div className="yearly-stats-wrap">

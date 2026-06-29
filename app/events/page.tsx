@@ -25,11 +25,6 @@ export default function TurneringerPage() {
       </div>
 
       <section>
-        <div className="sec-head">
-          <span className="note">
-            hold over en søyle for fordeling per nivå
-          </span>
-        </div>
         <EventsChart data={data} />
       </section>
 

@@ -29,7 +29,7 @@ export default function GrowthChart({ agg }: { agg: Agg }) {
   const p07 = agg.yr_players[i07];
   const sub = `Fra ${p07} aktive spillere i 2007 til ${nf(
     agg.yr_players[YEARS.indexOf(2025)]
-  )} i 2025 - norsk diskgolf har eksplodert.`;
+  )} i 2025.`;
 
   const [hoverIdx, setHoverIdx] = useState<number | null>(null);
   const svgRef = useRef<SVGSVGElement>(null);

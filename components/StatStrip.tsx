@@ -15,7 +15,7 @@ export default function StatStrip({
         <div className="l">
           unike spillere
           <br />
-          alle divisjoner, <b>1990–2025</b>
+          alle divisjoner
         </div>
       </div>
       <div className="stat">

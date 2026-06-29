@@ -21,11 +21,6 @@ export default function StatistikkPage() {
       </div>
 
       <section>
-        <div className="sec-head">
-          <span className="note">
-            aktive spillere, nye spillere, deltakelser og snitt
-          </span>
-        </div>
         <YearlyStatsTable agg={S.agg} />
       </section>
     </>

@@ -17,11 +17,6 @@ export default function HeatmapPage() {
       </div>
 
       <section>
-        <div className="sec-head">
-          <span className="note">
-            klikk en kolonne for å sortere · søk treffer alle spalter
-          </span>
-        </div>
         <HeatmapTable />
       </section>
     </>
