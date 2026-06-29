@@ -12,7 +12,7 @@ const NAV_ITEMS = [
   { href: "/veteraner", label: "Veteraner" },
   { href: "/heatmap", label: "Spillerdetaljer" },
   { href: "/events", label: "Turneringer" },
-  { href: "/historie", label: "Historie" },
+  // { href: "/historie", label: "Historie" },
 ];
 
 export default function Header() {

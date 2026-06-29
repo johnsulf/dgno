@@ -53,10 +53,10 @@ export default function Home() {
             <h3>Spillerdetaljer</h3>
             <p>Fullstendig oversikt over deltakelser per spiller per år.</p>
           </Link>
-          <Link href="/historie" className="link-card">
+          {/* <Link href="/historie" className="link-card">
             <h3>Historie</h3>
             <p>Norsk diskgolf gjennom tidene – fra pionertid til massesport.</p>
-          </Link>
+          </Link> */}
         </div>
       </section>
     </>
