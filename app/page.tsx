@@ -41,10 +41,6 @@ export default function Home() {
             <h3>Mest aktive spillere</h3>
             <p>Hvem har spilt flest turneringer totalt gjennom alle år?</p>
           </Link>
-          <Link href="/topp5ar" className="link-card">
-            <h3>Mest aktive siste 5 år</h3>
-            <p>Toppliste og årstabell for de fem nyeste sesongene.</p>
-          </Link>
           <Link href="/events" className="link-card">
             <h3>Turneringer arrangert i Norge</h3>
             <p>Graf, årstabell og komplett turneringsliste per nivå.</p>
