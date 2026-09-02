@@ -182,7 +182,7 @@ const summary = {
     span: [y0, y1],
     peak_players: peakPlayers,
     peak_year: peakYear,
-    players_2025: yrPlayers[years.indexOf(2025)] ?? 0,
+    players_last: yrPlayers[yrPlayers.length - 1] ?? 0,
   },
   top: sliceWithTies(players, "total", 20).map((p) => ({
     pdga: p.pdga,

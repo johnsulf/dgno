@@ -32,7 +32,8 @@ export default function LongevityTable({
   return (
     <div className="longevity-grid">
       <div className="longevity-card">
-        <h3>Flest aktive år</h3>
+        <h3>Flest sesonger</h3>
+        <p className="note">År med minst én registrert turnering.</p>
         <table className="longevity-table">
           <thead>
             <tr>
@@ -58,6 +59,7 @@ export default function LongevityTable({
       </div>
       <div className="longevity-card">
         <h3>Lengste streak (år på rad)</h3>
+        <p className="note">Flest år på rad med turneringsspill, uansett når.</p>
         <table className="longevity-table">
           <thead>
             <tr>
@@ -82,7 +84,8 @@ export default function LongevityTable({
         </table>
       </div>
       <div className="longevity-card">
-        <h3>Aktiv streak (inkl. 2025)</h3>
+        <h3>Lengste aktive streak</h3>
+        <p className="note">Rekker som fortsatt løper, altså til og med siste sesong.</p>
         <table className="longevity-table">
           <thead>
             <tr>

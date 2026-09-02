@@ -52,7 +52,7 @@ export type Meta = {
   span: [number, number];
   peak_players: number;
   peak_year: number;
-  players_2025: number;
+  players_last: number;
 };
 
 export type Summary = {

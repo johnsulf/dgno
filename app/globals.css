@@ -78,16 +78,13 @@ header.hero { @apply pt-10 pb-2; }
 
 /* ========== Chart card ========== */
 .chartcard { @apply mt-7.5 bg-linear-to-b from-panel to-panel2 border border-line rounded-2xl p-5 pb-3 relative overflow-hidden; }
-.chartcard h2 { @apply font-display text-sm font-semibold tracking-wide m-0 mb-0.5; }
-.chartcard .sub { @apply text-muted2 text-[12.5px] m-0 mb-1.5 font-mono; }
+.chartcard h2 { @apply font-display text-sm font-semibold tracking-wide m-0 mb-2; }
 svg { @apply block w-full h-auto; }
 .chart-container { @apply relative overflow-visible; }
 .gridline { stroke: var(--color-line); stroke-width: 1; }
 .axis-label { fill: var(--color-muted); font-family: var(--font-mono); font-size: 11px; }
 .area { fill: url(#grad); }
 .aline { fill: none; stroke: var(--color-brass); stroke-width: 2.4; stroke-linejoin: round; }
-.dot { fill: var(--color-hot); }
-.anno { fill: var(--color-text); font-family: var(--font-sans); font-size: 12.5px; font-weight: 600; }
 
 /* ========== Chart tooltip ========== */
 .chart-tooltip {
@@ -207,7 +204,8 @@ td.cell.empty { @apply text-transparent; }
 /* ========== Longevity tables ========== */
 .longevity-grid { @apply grid grid-cols-1 md:grid-cols-3 gap-5; }
 .longevity-card { @apply bg-panel border border-line rounded-[14px] overflow-hidden; }
-.longevity-card h3 { @apply font-display font-semibold text-[15px] tracking-tight px-4.5 pt-4 pb-2 m-0; }
+.longevity-card h3 { @apply font-display font-semibold text-[15px] tracking-tight px-4.5 pt-4 pb-1 m-0; }
+.longevity-card .note { @apply text-muted2 text-[11.5px] leading-snug px-4.5 pb-3 m-0; }
 .longevity-table { @apply w-full border-collapse; table-layout: fixed; }
 .longevity-table thead th { @apply bg-[#0b181b] text-muted font-mono font-medium text-[11px] px-3 py-2 border-b border-line2; }
 .longevity-table thead th:first-child { @apply text-right w-[8%]; }

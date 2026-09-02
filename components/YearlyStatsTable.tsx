@@ -13,7 +13,7 @@ export default function YearlyStatsTable({ agg }: { agg: Agg }) {
         <thead>
           <tr>
             <th>År</th>
-            <th>Aktive spillere</th>
+            <th>Spillere</th>
             <th>Nye spillere</th>
             <th>Deltakelser</th>
             <th>Snitt per spiller</th>

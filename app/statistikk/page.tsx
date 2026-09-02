@@ -10,13 +10,15 @@ export const metadata: Metadata = {
 };
 
 export default function StatistikkPage() {
+  const [firstYear, lastYear] = S.meta.span;
+
   return (
     <>
       <div className="page-header">
         <h1>Statistikk år for år</h1>
         <p className="lede">
-          Aktive spillere, nye spillere, deltakelser og snitt – sesong for sesong fra
-          1990 til 2025.
+          Antall spillere med minst én turnering, nye spillere, deltakelser og
+          snitt – sesong for sesong fra {firstYear} til {lastYear}.
         </p>
       </div>
 

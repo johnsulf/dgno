@@ -15,8 +15,8 @@ export default function VeteranerPage() {
       <div className="page-header">
         <h1>Veteraner og streaks</h1>
         <p className="lede">
-          Hvem har holdt på lengst? Flest aktive sesonger, lengste sammenhengende
-          rekker, og hvem som fortsatt er aktive.
+          Hvem har holdt på lengst? Flest sesonger med turneringsspill, lengste
+          sammenhengende rekker, og hvem som fortsatt spiller.
         </p>
       </div>
 

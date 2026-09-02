@@ -23,13 +23,7 @@ export default function GrowthChart({ agg }: { agg: Agg }) {
   area += ` L ${x(yt.length - 1)} ${y(0)} Z`;
 
   const gridVals = [0, maxY / 2, maxY];
-  const tickYears = [1990, 1995, 2000, 2005, 2010, 2015, 2020, 2025];
-  const i25 = YEARS.indexOf(2025);
-  const i07 = YEARS.indexOf(2007);
-  const p07 = agg.yr_players[i07];
-  const sub = `Fra ${p07} aktive spillere i 2007 til ${nf(
-    agg.yr_players[YEARS.indexOf(2025)]
-  )} i 2025.`;
+  const tickYears = YEARS.filter((yr) => yr % 5 === 0);
 
   const [hoverIdx, setHoverIdx] = useState<number | null>(null);
   const svgRef = useRef<SVGSVGElement>(null);
@@ -56,15 +50,14 @@ export default function GrowthChart({ agg }: { agg: Agg }) {
 
   return (
     <div className="chartcard">
-      <h2>Turneringsdeltakelser per år</h2>
-      <p className="sub">{sub}</p>
+      <h2>Turneringsdeltakelser av norske PDGA-medlemmer per år</h2>
       <div className="chart-container">
         <svg
           ref={svgRef}
           viewBox="0 0 1000 300"
           preserveAspectRatio="none"
           role="img"
-          aria-label={`Linjediagram som viser turneringsdeltakelser per år fra ${YEARS[0]} til ${YEARS[YEARS.length - 1]}. Topp: ${nf(yt[i25])} deltakelser i 2025.`}
+          aria-label={`Linjediagram som viser turneringsdeltakelser per år fra ${YEARS[0]} til ${YEARS[YEARS.length - 1]}.`}
           onMouseMove={onMouseMove}
           onMouseLeave={onMouseLeave}
         >
@@ -110,15 +103,6 @@ export default function GrowthChart({ agg }: { agg: Agg }) {
                 cx={x(hoverIdx)} cy={y(yt[hoverIdx])} r={5}
                 fill="var(--color-hot)" stroke="var(--color-text)" strokeWidth={2}
               />
-            </>
-          )}
-          {/* Static 2025 annotation only when not hovering */}
-          {hoverIdx === null && i25 >= 0 && (
-            <>
-              <circle className="dot" cx={x(i25)} cy={y(yt[i25])} r={4} />
-              <text className="anno" x={x(i25)} y={y(yt[i25]) - 12} textAnchor="end">
-                {nf(yt[i25])} i 2025
-              </text>
             </>
           )}
         </svg>

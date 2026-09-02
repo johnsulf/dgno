@@ -155,7 +155,7 @@ export default function EventsTable({ events }: { events: NamedEvent[] }) {
                     {e.tier === "ES" ? "ES" : e.tier}
                   </span>
                 </td>
-                <td className="ev-city">{e.city ?? "—"}</td>
+                <td className="ev-city">{e.city ?? "-"}</td>
                 <td className="ev-cls">{e.cls}</td>
               </tr>
             ))}

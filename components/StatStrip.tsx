@@ -35,9 +35,9 @@ export default function StatStrip({
         </div>
       </div>
       <div className="stat">
-        <div className="n">{nf(meta.players_2025)}</div>
+        <div className="n">{nf(meta.players_last)}</div>
         <div className="l">
-          spillere i 2025
+          spillere i {meta.span[1]}
           <br />
           mot <b>49</b> i 2007
         </div>

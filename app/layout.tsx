@@ -5,8 +5,8 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   title: {
-    default: "Norsk diskgolf i tall · 1990–2025",
-    template: "%s · Norsk diskgolf i tall",
+    default: "Norsk PDGA-historie i tall",
+    template: "%s · Norsk PDGA-historie i tall",
   },
   description:
     "Antall PDGA-turneringer spilt per norsk spiller per år, summert på tvers av alle divisjoner, fra 1990 til i dag.",
