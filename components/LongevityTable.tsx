@@ -51,7 +51,7 @@ export default function LongevityTable({
                 <td className="nm"><a href={`https://www.pdga.com/player/${p.pdga}`} target="_blank" rel="noopener noreferrer">{p.name}</a></td>
                 <td className="num hl">{p.seasons}</td>
                 <td className="num">{nf(p.total)}</td>
-                <td className="num dim">{p.first}–{p.last}</td>
+                <td className="num dim">{p.first}-{p.last}</td>
               </tr>
             ))}
           </tbody>
@@ -77,7 +77,7 @@ export default function LongevityTable({
                 <td className="nm"><a href={`https://www.pdga.com/player/${p.pdga}`} target="_blank" rel="noopener noreferrer">{p.name}</a></td>
                 <td className="num hl">{p.streak}</td>
                 <td className="num">{p.seasons}</td>
-                <td className="num dim">{p.streakFrom}–{p.streakTo}</td>
+                <td className="num dim">{p.streakFrom}-{p.streakTo}</td>
               </tr>
             ))}
           </tbody>
@@ -103,7 +103,7 @@ export default function LongevityTable({
                 <td className="nm"><a href={`https://www.pdga.com/player/${p.pdga}`} target="_blank" rel="noopener noreferrer">{p.name}</a></td>
                 <td className="num hl">{p.activeStreak}</td>
                 <td className="num">{p.seasons}</td>
-                <td className="num dim">{p.last! - p.activeStreak + 1}–{p.last}</td>
+                <td className="num dim">{p.last! - p.activeStreak + 1}-{p.last}</td>
               </tr>
             ))}
           </tbody>

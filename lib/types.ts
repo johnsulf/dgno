@@ -68,3 +68,9 @@ export type PlayersData = {
   years: number[];
   players: Player[];
 };
+
+/** Tekstene i `items` kan inneholde markdown-lenker: [tekst](url) */
+export type Milestone = {
+  year: number;
+  items: string[];
+};

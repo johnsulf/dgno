@@ -173,22 +173,23 @@ td.cell.empty { @apply text-transparent; }
 .link-card h3 { @apply font-display font-semibold text-text text-[16px] tracking-tight m-0 mb-1.5; }
 .link-card p { @apply text-muted2 text-[13.5px] leading-snug m-0; }
 
-/* ========== History / periods ========== */
+/* ========== Milestones timeline ========== */
 .period-nav { @apply flex gap-2 flex-wrap mt-6 mb-6; }
 .period-nav-link {
   @apply font-mono text-[12.5px] font-medium text-muted px-3.5 py-1.5 rounded-full border border-line no-underline transition-colors;
 }
 .period-nav-link:hover { @apply border-teal text-teal; }
-.periods { @apply flex flex-col gap-6 pb-4; }
-.period-card {
+.timeline { @apply flex flex-col gap-4 list-none m-0 p-0 pb-4; }
+.timeline-item {
   @apply bg-panel border border-line rounded-[14px] p-6 scroll-mt-20;
 }
-.period-card .period-badge {
+.timeline-year {
   @apply inline-block font-mono text-[11.5px] font-semibold text-teal bg-[rgba(43,182,168,.1)] border border-[rgba(43,182,168,.2)] rounded-full px-3 py-0.5 mb-3;
 }
-.period-card h2 { @apply font-display font-bold text-[clamp(18px,2.5vw,24px)] tracking-tight mt-0 mb-3; }
-.period-card p { @apply text-muted text-[15px] leading-relaxed m-0 mb-3 max-w-[72ch]; }
-.period-card p:last-child { @apply mb-0; }
+.timeline-item ul { @apply flex flex-col gap-3 list-none m-0 p-0; }
+.timeline-item li { @apply text-muted text-[15px] leading-relaxed max-w-[72ch]; }
+.timeline-item a { @apply text-teal no-underline border-b border-[rgba(43,182,168,.35)]; }
+.timeline-item a:hover { @apply border-teal; }
 
 /* ========== Yearly stats table ========== */
 .yearly-stats-wrap { @apply border border-line rounded-[14px] overflow-auto max-h-[70vh] bg-panel2; }

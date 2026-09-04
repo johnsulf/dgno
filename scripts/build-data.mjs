@@ -246,6 +246,6 @@ fs.writeFileSync(
 );
 
 console.log(
-  `OK: ${players.length} spillere, ${y0}–${y1}, ${totalEntries} deltakelser`,
+  `OK: ${players.length} spillere, ${y0}-${y1}, ${totalEntries} deltakelser`,
 );
 console.log("Skrev public/data/players.json og data/summary.json");

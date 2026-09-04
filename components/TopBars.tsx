@@ -39,7 +39,7 @@ export default function TopBars({
                 <small>
                   #{p.pdga}
                   {showActiveYears
-                    ? ` · ${p.first ?? "?"}–${p.last ?? "?"}`
+                    ? ` · ${p.first ?? "?"}-${p.last ?? "?"}`
                     : ""}
                 </small>
               </span>

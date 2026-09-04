@@ -6,14 +6,14 @@ import LongevityTable from "@/components/LongevityTable";
 const S = summary as unknown as Summary;
 
 export const metadata: Metadata = {
-  title: "Veteraner og streaks",
+  title: "Veteraner og sammenhengende rekker",
 };
 
 export default function VeteranerPage() {
   return (
     <>
       <div className="page-header">
-        <h1>Veteraner og streaks</h1>
+        <h1>Veteraner og sammenhengende rekker</h1>
         <p className="lede">
           Hvem har holdt på lengst? Flest sesonger med turneringsspill, lengste
           sammenhengende rekker, og hvem som fortsatt spiller.

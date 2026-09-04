@@ -103,7 +103,7 @@ export default function HeatmapTable() {
           `<a href="https://www.pdga.com/player/${esc(p.pdga)}" target="_blank" rel="noopener noreferrer">${esc(
             p.name
           )}</a></div>` +
-          `<div class="meta">#${esc(p.pdga)} · ${p.first}–${p.last}</div></td>` +
+          `<div class="meta">#${esc(p.pdga)} · ${p.first}-${p.last}</div></td>` +
           `<td class="tot">${p.total}</td><td class="sea">${p.seasons}</td>`;
         for (const val of p.y) {
           if (!val) {

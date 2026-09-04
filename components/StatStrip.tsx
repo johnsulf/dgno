@@ -4,9 +4,11 @@ import { nf } from "@/lib/heat";
 export default function StatStrip({
   meta,
   lead,
+  nEvents,
 }: {
   meta: Meta;
   lead: TopPlayer;
+  nEvents: number;
 }) {
   return (
     <div className="stats">
@@ -15,7 +17,7 @@ export default function StatStrip({
         <div className="l">
           unike spillere
           <br />
-          alle divisjoner
+          totalt
         </div>
       </div>
       <div className="stat">
@@ -35,11 +37,11 @@ export default function StatStrip({
         </div>
       </div>
       <div className="stat">
-        <div className="n">{nf(meta.players_last)}</div>
+        <div className="n">{nf(nEvents)}</div>
         <div className="l">
-          spillere i {meta.span[1]}
+          arrangerte turneringer
           <br />
-          mot <b>49</b> i 2007
+          totalt
         </div>
       </div>
     </div>

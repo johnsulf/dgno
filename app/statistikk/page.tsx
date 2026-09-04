@@ -18,7 +18,7 @@ export default function StatistikkPage() {
         <h1>Statistikk år for år</h1>
         <p className="lede">
           Antall spillere med minst én turnering, nye spillere, deltakelser og
-          snitt – sesong for sesong fra {firstYear} til {lastYear}.
+          snitt - sesong for sesong fra {firstYear} til {lastYear}.
         </p>
       </div>
 

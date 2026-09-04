@@ -1,10 +1,12 @@
 import summary from "@/data/summary.json";
+import events from "@/data/events-summary.json";
 import { Summary } from "@/lib/types";
 import GrowthChart from "@/components/GrowthChart";
 import StatStrip from "@/components/StatStrip";
 import Link from "next/link";
 
 const S = summary as unknown as Summary;
+const nEvents = (events as { meta: { n_events: number } }).meta.n_events;
 
 export default function Home() {
   const [firstYear, lastYear] = S.meta.span;
@@ -14,21 +16,16 @@ export default function Home() {
     <>
       <header className="hero">
         <div className="eyebrow">
-          PDGA-statistikk · Norge · {firstYear}–{lastYear}
+          PDGA-statistikk · Norge · {firstYear}-{lastYear}
         </div>
         <h1>
           Turnering for turnering:
           <br />
           norsk diskgolf i <span className="hl">{seasons} sesonger</span>
         </h1>
-        <p className="lede">
-          Antall PDGA-turneringer spilt per spiller per år, summert på tvers av
-          alle divisjoner - hele det norske feltet, fra det aller første
-          registrerte resultatet i {firstYear} til {lastYear}.
-        </p>
 
         <GrowthChart agg={S.agg} />
-        <StatStrip meta={S.meta} lead={S.top[0]} />
+        <StatStrip meta={S.meta} lead={S.top[0]} nEvents={nEvents} />
       </header>
 
       <section className="quick-links">
@@ -51,17 +48,17 @@ export default function Home() {
             <p>Graf, årstabell og komplett turneringsliste per nivå.</p>
           </Link>
           <Link href="/veteraner" className="link-card">
-            <h3>Veteraner og streaks</h3>
+            <h3>Veteraner og sammenhengende rekker</h3>
             <p>Flest sesonger og lengste sammenhengende rekker.</p>
           </Link>
           <Link href="/heatmap" className="link-card">
             <h3>Spillerdetaljer</h3>
             <p>Fullstendig oversikt over deltakelser per spiller per år.</p>
           </Link>
-          {/* <Link href="/historie" className="link-card">
-            <h3>Historie</h3>
-            <p>Norsk diskgolf gjennom tidene – fra pionertid til massesport.</p>
-          </Link> */}
+          <Link href="/milepaeler" className="link-card">
+            <h3>Historiske milepæler</h3>
+            <p>Fra første norske medlem i 1987 til Elite Series og EM i 2025.</p>
+          </Link>
         </div>
       </section>
     </>

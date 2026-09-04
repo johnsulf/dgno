@@ -1,7 +1,7 @@
 # dgno - norsk diskgolf-statistikk
 
 Interaktivt dashboard over antall PDGA-turneringer per norsk spiller per år
-(1990–), summert på tvers av alle divisjoner. Bygget med Next.js (App Router) +
+(1990-), summert på tvers av alle divisjoner. Bygget med Next.js (App Router) +
 TypeScript.
 
 ## Kom i gang

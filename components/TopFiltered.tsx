@@ -95,7 +95,7 @@ export default function TopFiltered() {
   const periodLabel =
     mode === "year"
       ? `${selectedYear}`
-      : `${years[fromIdx]}–${years[toIdx]}`;
+      : `${years[fromIdx]}-${years[toIdx]}`;
 
   const showYearlyCols = filteredYears.length > 1 && filteredYears.length <= 15;
 
@@ -186,52 +186,48 @@ export default function TopFiltered() {
         <TopBars top={top} showActiveYears={mode === "total"} />
       </section>
 
-      <section style={{ marginTop: 32 }}>
-        <div className="sec-head">
-          <span className="note">
-            Tabellvisning{filteredYears.length > 1 ? ` per år (${periodLabel})` : ` (${periodLabel})`} for topp 20
-          </span>
-        </div>
-        <div className="yearly-stats-wrap">
-          <table
-            className="yearly-stats"
-            aria-label={`Topp 20 mest aktive ${periodLabel}`}
-          >
-            <thead>
-              <tr>
-                <th style={{ width: showYearlyCols ? "28%" : "auto", textAlign: "left" }}>
-                  Spiller
-                </th>
-                {showYearlyCols &&
-                  filteredYears.map((year) => <th key={year}>{year}</th>)}
-                <th>Totalt</th>
-              </tr>
-            </thead>
-            <tbody>
-              {topPlayers.map((p) => (
-                <tr key={p.pdga}>
-                  <td style={{ textAlign: "left" }}>
-                    <a
-                      href={`https://www.pdga.com/player/${p.pdga}`}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      {p.name}
-                    </a>
-                  </td>
-                  {showYearlyCols &&
-                    p.yearly.map((count, i) => (
-                      <td key={`${p.pdga}-${filteredYears[i]}`}>
-                        {nf(count)}
-                      </td>
-                    ))}
-                  <td>{nf(p.total)}</td>
+      {showYearlyCols && (
+        <section style={{ marginTop: 32 }}>
+          <div className="sec-head">
+            <span className="note">Tabellvisning ({periodLabel}) for topp 20</span>
+          </div>
+          <div className="yearly-stats-wrap">
+            <table
+              className="yearly-stats"
+              aria-label={`Topp 20 mest aktive ${periodLabel}`}
+            >
+              <thead>
+                <tr>
+                  <th style={{ width: "28%", textAlign: "left" }}>Spiller</th>
+                  {filteredYears.map((year) => (
+                    <th key={year}>{year}</th>
+                  ))}
+                  <th>Totalt</th>
                 </tr>
-              ))}
-            </tbody>
-          </table>
-        </div>
-      </section>
+              </thead>
+              <tbody>
+                {topPlayers.map((p) => (
+                  <tr key={p.pdga}>
+                    <td style={{ textAlign: "left" }}>
+                      <a
+                        href={`https://www.pdga.com/player/${p.pdga}`}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        {p.name}
+                      </a>
+                    </td>
+                    {p.yearly.map((count, i) => (
+                      <td key={`${p.pdga}-${filteredYears[i]}`}>{nf(count)}</td>
+                    ))}
+                    <td>{nf(p.total)}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        </section>
+      )}
     </>
   );
 }

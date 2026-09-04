@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import HeatmapTable from "@/components/HeatmapTable";
 
 export const metadata: Metadata = {
-  title: "Heatmap – deltakelser per spiller",
+  title: "Heatmap - deltakelser per spiller",
 };
 
 export default function HeatmapPage() {

@@ -19,8 +19,7 @@ export default function TurneringerPage() {
         <h1>Turneringer arrangert i Norge</h1>
         <p className="lede">
           Antall PDGA-sanksjonerte turneringer arrangert i Norge per år, fordelt
-          på nivå - fra de første på begynnelsen av 2000-tallet til{" "}
-          {data.meta.peak_count} i {data.meta.peak_year}.
+          på nivå.
         </p>
       </div>
 
@@ -37,7 +36,7 @@ export default function TurneringerPage() {
 
       <section style={{ marginTop: 40 }}>
         <div className="sec-head">
-          <h2>Alle turneringer (ES, A og B-tier)</h2>
+          <h2>Alle turneringer</h2>
         </div>
         <EventsTable events={named} />
       </section>
