@@ -262,26 +262,6 @@
       "cls": "Am"
     },
     {
-      "id": "96922",
-      "name": "Aa-gård Open Høst 2025",
-      "tier": "C",
-      "rawtier": "C",
-      "year": 2025,
-      "date": "2025-10-04",
-      "city": "Tennevoll",
-      "cls": "Pro-Am"
-    },
-    {
-      "id": "92405",
-      "name": "Aa-gård Vårturnering",
-      "tier": "C",
-      "rawtier": "C",
-      "year": 2025,
-      "date": "2025-05-03",
-      "city": "Tennevoll",
-      "cls": "Pro-Am"
-    },
-    {
       "id": "93554",
       "name": "Eigersund Open 2025",
       "tier": "C",
@@ -392,16 +372,6 @@
       "cls": "Am"
     },
     {
-      "id": "92955",
-      "name": "NM i diskgolf for døve og hørselshemmede 2025",
-      "tier": "C",
-      "rawtier": "C",
-      "year": 2025,
-      "date": "2025-06-21",
-      "city": "Søgne",
-      "cls": "Pro-Am"
-    },
-    {
       "id": "94787",
       "name": "Nannestad Open 2025",
       "tier": "C",
@@ -409,6 +379,16 @@
       "year": 2025,
       "date": "2025-08-30",
       "city": "Nannestad",
+      "cls": "Pro-Am"
+    },
+    {
+      "id": "92955",
+      "name": "NM i diskgolf for døve og hørselshemmede 2025",
+      "tier": "C",
+      "rawtier": "C",
+      "year": 2025,
+      "date": "2025-06-21",
+      "city": "Søgne",
       "cls": "Pro-Am"
     },
     {
@@ -562,6 +542,36 @@
       "cls": "Pro-Am"
     },
     {
+      "id": "92191",
+      "name": "Vestkysttour 2025 Flaktveit",
+      "tier": "C",
+      "rawtier": "C",
+      "year": 2025,
+      "date": "2025-05-03",
+      "city": "Bergen",
+      "cls": "Pro-Am"
+    },
+    {
+      "id": "92896",
+      "name": "Vestkysttour 2025 Kulleseidkanalen",
+      "tier": "C",
+      "rawtier": "C",
+      "year": 2025,
+      "date": "2025-07-26",
+      "city": "Finnås",
+      "cls": "Pro-Am"
+    },
+    {
+      "id": "95234",
+      "name": "Vestkysttour 2025 Lindås",
+      "tier": "C",
+      "rawtier": "C",
+      "year": 2025,
+      "date": "2025-08-30",
+      "city": "Lindås",
+      "cls": "Pro-Am"
+    },
+    {
       "id": "95725",
       "name": "VKT Sandnes 2025",
       "tier": "C",
@@ -602,33 +612,43 @@
       "cls": "Pro-Am"
     },
     {
-      "id": "92191",
-      "name": "Vestkysttour 2025 Flaktveit",
+      "id": "95210",
+      "name": "Ølberg 10års jubileum",
+      "tier": "C",
+      "rawtier": "C",
+      "year": 2025,
+      "date": "2025-08-23",
+      "city": "Ræge",
+      "cls": "Pro-Am"
+    },
+    {
+      "id": "90037",
+      "name": "Øya Open 2025",
+      "tier": "C",
+      "rawtier": "C",
+      "year": 2025,
+      "date": "2025-03-29",
+      "city": "Hafslundsøy",
+      "cls": "Pro-Am"
+    },
+    {
+      "id": "96922",
+      "name": "Aa-gård Open Høst 2025",
+      "tier": "C",
+      "rawtier": "C",
+      "year": 2025,
+      "date": "2025-10-04",
+      "city": "Tennevoll",
+      "cls": "Pro-Am"
+    },
+    {
+      "id": "92405",
+      "name": "Aa-gård Vårturnering",
       "tier": "C",
       "rawtier": "C",
       "year": 2025,
       "date": "2025-05-03",
-      "city": "Bergen",
-      "cls": "Pro-Am"
-    },
-    {
-      "id": "92896",
-      "name": "Vestkysttour 2025 Kulleseidkanalen",
-      "tier": "C",
-      "rawtier": "C",
-      "year": 2025,
-      "date": "2025-07-26",
-      "city": "Finnås",
-      "cls": "Pro-Am"
-    },
-    {
-      "id": "95234",
-      "name": "Vestkysttour 2025 Lindås",
-      "tier": "C",
-      "rawtier": "C",
-      "year": 2025,
-      "date": "2025-08-30",
-      "city": "Lindås",
+      "city": "Tennevoll",
       "cls": "Pro-Am"
     },
     {
@@ -649,26 +669,6 @@
       "year": 2025,
       "date": "2025-08-30",
       "city": "Tromsø",
-      "cls": "Pro-Am"
-    },
-    {
-      "id": "95210",
-      "name": "Ølberg 10års jubileum",
-      "tier": "C",
-      "rawtier": "C",
-      "year": 2025,
-      "date": "2025-08-23",
-      "city": "Ræge",
-      "cls": "Pro-Am"
-    },
-    {
-      "id": "90037",
-      "name": "Øya Open 2025",
-      "tier": "C",
-      "rawtier": "C",
-      "year": 2025,
-      "date": "2025-03-29",
-      "city": "Hafslundsøy",
       "cls": "Pro-Am"
     },
     {
@@ -829,16 +829,6 @@
       "year": 2024,
       "date": "2024-05-31",
       "city": "Ræge",
-      "cls": "Pro-Am"
-    },
-    {
-      "id": "85561",
-      "name": "Aa-gård Open",
-      "tier": "C",
-      "rawtier": "C",
-      "year": 2024,
-      "date": "2024-10-05",
-      "city": "Tennevoll",
       "cls": "Pro-Am"
     },
     {
@@ -1053,7 +1043,7 @@
     },
     {
       "id": "82846",
-      "name": "Romerike Cup - Jessheim Open ",
+      "name": "Romerike Cup - Jessheim Open",
       "tier": "C",
       "rawtier": "C",
       "year": 2024,
@@ -1063,7 +1053,7 @@
     },
     {
       "id": "85198",
-      "name": "Romerike Cup - Nannestad Open ",
+      "name": "Romerike Cup - Nannestad Open",
       "tier": "C",
       "rawtier": "C",
       "year": 2024,
@@ -1192,16 +1182,6 @@
       "cls": "Pro-Am"
     },
     {
-      "id": "85444",
-      "name": "Ålgård Open",
-      "tier": "C",
-      "rawtier": "C",
-      "year": 2024,
-      "date": "2024-09-14",
-      "city": "Ålgård",
-      "cls": "Pro-Am"
-    },
-    {
       "id": "83065",
       "name": "Ørland Open",
       "tier": "C",
@@ -1219,6 +1199,26 @@
       "year": 2024,
       "date": "2024-05-04",
       "city": "Sarpsborg",
+      "cls": "Pro-Am"
+    },
+    {
+      "id": "85561",
+      "name": "Aa-gård Open",
+      "tier": "C",
+      "rawtier": "C",
+      "year": 2024,
+      "date": "2024-10-05",
+      "city": "Tennevoll",
+      "cls": "Pro-Am"
+    },
+    {
+      "id": "85444",
+      "name": "Ålgård Open",
+      "tier": "C",
+      "rawtier": "C",
+      "year": 2024,
+      "date": "2024-09-14",
+      "city": "Ålgård",
       "cls": "Pro-Am"
     },
     {
@@ -1383,7 +1383,7 @@
     },
     {
       "id": "73545",
-      "name": "Coretto Open ",
+      "name": "Coretto Open",
       "tier": "C",
       "rawtier": "C",
       "year": 2023,
@@ -1432,6 +1432,16 @@
       "cls": "Pro-Am"
     },
     {
+      "id": "71360",
+      "name": "Nordisc female open",
+      "tier": "C",
+      "rawtier": "C",
+      "year": 2023,
+      "date": "2023-05-27",
+      "city": "Sandnes",
+      "cls": "Pro-Am"
+    },
+    {
       "id": "65769",
       "name": "Nordisc Tour Hestehagen 2023 powered by Prodigy",
       "tier": "C",
@@ -1450,16 +1460,6 @@
       "date": "2023-09-02",
       "city": "Oslo",
       "cls": "Am"
-    },
-    {
-      "id": "71360",
-      "name": "Nordisc female open",
-      "tier": "C",
-      "rawtier": "C",
-      "year": 2023,
-      "date": "2023-05-27",
-      "city": "Sandnes",
-      "cls": "Pro-Am"
     },
     {
       "id": "73475",
@@ -1483,7 +1483,7 @@
     },
     {
       "id": "72469",
-      "name": "Romerike Cup - Nannestad Open ",
+      "name": "Romerike Cup - Nannestad Open",
       "tier": "C",
       "rawtier": "C",
       "year": 2023,
@@ -1493,7 +1493,7 @@
     },
     {
       "id": "72470",
-      "name": "Romerike Cup - Rådhusparken Open ",
+      "name": "Romerike Cup - Rådhusparken Open",
       "tier": "C",
       "rawtier": "C",
       "year": 2023,
@@ -1572,13 +1572,13 @@
       "cls": "Pro-Am"
     },
     {
-      "id": "69303",
-      "name": "VT Tour 2023 Presentert av Alfa Discs - Sande",
+      "id": "74660",
+      "name": "Varingskollen Open",
       "tier": "C",
       "rawtier": "C",
       "year": 2023,
-      "date": "2023-04-22",
-      "city": "Sande",
+      "date": "2023-09-30",
+      "city": "Hakadal",
       "cls": "Pro-Am"
     },
     {
@@ -1592,13 +1592,13 @@
       "cls": "Pro-Am"
     },
     {
-      "id": "74660",
-      "name": "Varingskollen Open",
+      "id": "69303",
+      "name": "VT Tour 2023 Presentert av Alfa Discs - Sande",
       "tier": "C",
       "rawtier": "C",
       "year": 2023,
-      "date": "2023-09-30",
-      "city": "Hakadal",
+      "date": "2023-04-22",
+      "city": "Sande",
       "cls": "Pro-Am"
     },
     {
@@ -1653,7 +1653,7 @@
     },
     {
       "id": "58075",
-      "name": "Flaktveit Open ",
+      "name": "Flaktveit Open",
       "tier": "B",
       "rawtier": "B",
       "year": 2022,
@@ -1793,7 +1793,7 @@
     },
     {
       "id": "64749",
-      "name": "Movember ",
+      "name": "Movember",
       "tier": "C",
       "rawtier": "C",
       "year": 2022,
@@ -1903,7 +1903,7 @@
     },
     {
       "id": "61468",
-      "name": "Valstad Open - Presented by Disc golf Dynasty ",
+      "name": "Valstad Open - Presented by Disc golf Dynasty",
       "tier": "C",
       "rawtier": "C",
       "year": 2022,
@@ -1913,7 +1913,7 @@
     },
     {
       "id": "63787",
-      "name": "Varingskollen Open ",
+      "name": "Varingskollen Open",
       "tier": "C",
       "rawtier": "C",
       "year": 2022,
@@ -2452,16 +2452,6 @@
       "cls": "Pro-Am"
     },
     {
-      "id": "36685",
-      "name": "PCS Open 2018",
-      "tier": "C",
-      "rawtier": "C",
-      "year": 2018,
-      "date": "2018-09-14",
-      "city": "Vestnes",
-      "cls": "Pro-Am"
-    },
-    {
       "id": "38300",
       "name": "Pancake amateur open 2018",
       "tier": "C",
@@ -2469,6 +2459,16 @@
       "year": 2018,
       "date": "2018-09-15",
       "city": "Oslo",
+      "cls": "Pro-Am"
+    },
+    {
+      "id": "36685",
+      "name": "PCS Open 2018",
+      "tier": "C",
+      "rawtier": "C",
+      "year": 2018,
+      "date": "2018-09-14",
+      "city": "Vestnes",
       "cls": "Pro-Am"
     },
     {

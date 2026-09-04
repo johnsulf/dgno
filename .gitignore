@@ -30,5 +30,7 @@ yarn-error.log*
 # Only the aggregated data (data/summary.json, public/data/players.json) is allowed.
 /raw/
 pdga_norge_alle.json
+events_norge_alle.json
+pdga-auth.json
 data.json
 *.raw.json

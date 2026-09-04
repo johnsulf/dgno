@@ -40,6 +40,11 @@ export default function Footer() {
         i tidsperioden.
       </div>
       <div className="prov" style={{ borderTop: "none", paddingTop: 10 }}>
+        <b>Turneringslista.</b> Graf og årstabell viser alle sanksjonerte
+        turneringer, mens den navngitte turneringslista bare viser dem som gikk
+        over mer enn én dag, og uten liga.
+      </div>
+      <div className="prov" style={{ borderTop: "none", paddingTop: 10 }}>
         <b>Oppdatering.</b> Dataene oppdateres etter nyttår hvert år.
       </div>
       <div className="prov" style={{ borderTop: "none", paddingTop: 10 }}>

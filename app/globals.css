@@ -115,6 +115,7 @@ section { @apply pt-10; }
 .sec-head { @apply flex items-baseline gap-3.5 flex-wrap mb-4; }
 .sec-head h2 { @apply font-display font-semibold text-[clamp(19px,2.4vw,24px)] tracking-tight m-0; }
 .sec-head .note { @apply text-muted2 text-[13px] font-mono; }
+.section-note { @apply text-muted2 text-[13.5px] leading-relaxed max-w-[72ch] mt-0 mb-4; }
 
 /* ========== Top bars ========== */
 .bars { @apply flex flex-col gap-1.75 list-none p-0 m-0; }
