@@ -29,7 +29,7 @@ export default function Footer() {
         pdga.com.
       </div>
       <div className="prov" style={{ borderTop: "none", paddingTop: 10 }}>
-        <b>Hvem er med?</b> Listen inneholder spillere med nåværende bosted
+        <b>Hvilke spillere er med?</b> Datasettet inneholder spillere med nåværende bosted
         Norge i spillerprofilen på PDGA. Dette betyr at utenlandske spillere
         bosatt i Norge vil være inkludert, mens norske spillere bosatt i
         utlandet ikke vil være inkludert.
@@ -40,9 +40,7 @@ export default function Footer() {
         i tidsperioden.
       </div>
       <div className="prov" style={{ borderTop: "none", paddingTop: 10 }}>
-        <b>Turneringslista.</b> Graf og årstabell viser alle sanksjonerte
-        turneringer, mens den navngitte turneringslista bare viser dem som gikk
-        over mer enn én dag, og uten liga.
+        <b>Hvilke turneringer er med?</b> Turneringssiden inneholder alle PDGA-sanksjonerte turneringer arrangert i Norge. Se Turneringer for detaljer. Spillerstatistikkene inneholder alle turneringer de har spilt uavhengig av hvor.
       </div>
       <div className="prov" style={{ borderTop: "none", paddingTop: 10 }}>
         <b>Oppdatering.</b> Dataene oppdateres etter nyttår hvert år.

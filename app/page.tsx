@@ -19,9 +19,7 @@ export default function Home() {
           PDGA-statistikk · Norge · {firstYear}-{lastYear}
         </div>
         <h1>
-          Turnering for turnering:
-          <br />
-          norsk diskgolf i <span className="hl">{seasons} sesonger</span>
+          Norsk diskgolf år for år
         </h1>
 
         <GrowthChart agg={S.agg} />
@@ -41,11 +39,11 @@ export default function Home() {
           </Link>
           <Link href="/topp" className="link-card">
             <h3>Mest aktive spillere</h3>
-            <p>Hvem har spilt flest turneringer totalt gjennom alle år?</p>
+            <p>Hvem har flest spilte turneringer totalt gjennom alle år?</p>
           </Link>
           <Link href="/events" className="link-card">
             <h3>Turneringer arrangert i Norge</h3>
-            <p>Graf, årstabell og komplett turneringsliste per nivå.</p>
+            <p>Graf, årstabell og turneringsliste per nivå.</p>
           </Link>
           <Link href="/veteraner" className="link-card">
             <h3>Veteraner og sammenhengende rekker</h3>
