@@ -15,33 +15,25 @@ export default function StatStrip({
       <div className="stat">
         <div className="n">{nf(meta.n_players)}</div>
         <div className="l">
-          unike spillere
-          <br />
-          totalt
+          unike spillere totalt
         </div>
       </div>
       <div className="stat">
         <div className="n teal">{nf(meta.total_entries)}</div>
         <div className="l">
-          turneringsdeltakelser
-          <br />
-          summert over alle år
+          turneringsdeltakelser summert over alle år
         </div>
       </div>
       <div className="stat">
         <div className="n amber">{lead.total}</div>
         <div className="l">
-          turneringer
-          <br />
-          flest: <b>{lead.name}</b>
+          turneringer spilt av <b>{lead.name}</b> er flest
         </div>
       </div>
       <div className="stat">
         <div className="n">{nf(nEvents)}</div>
         <div className="l">
-          arrangerte turneringer
-          <br />
-          totalt
+          arrangerte turneringer totalt
         </div>
       </div>
     </div>
