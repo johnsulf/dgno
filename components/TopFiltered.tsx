@@ -93,9 +93,7 @@ export default function TopFiltered() {
   }));
 
   const periodLabel =
-    mode === "year"
-      ? `${selectedYear}`
-      : `${years[fromIdx]}-${years[toIdx]}`;
+    mode === "year" ? `${selectedYear}` : `${years[fromIdx]}-${years[toIdx]}`;
 
   const showYearlyCols = filteredYears.length > 1 && filteredYears.length <= 15;
 
@@ -189,7 +187,9 @@ export default function TopFiltered() {
       {showYearlyCols && (
         <section style={{ marginTop: 32 }}>
           <div className="sec-head">
-            <span className="note">Tabellvisning ({periodLabel}) for topp 20</span>
+            <span className="note">
+              Tabellvisning ({periodLabel}) for topp 20
+            </span>
           </div>
           <div className="yearly-stats-wrap">
             <table
