@@ -74,3 +74,44 @@ export type Milestone = {
   year: number;
   items: string[];
 };
+
+/** Aggregat per fylke fra scripts/build-players-geo.mjs. Ingen enkeltspillere. */
+export type CountyCounts = {
+  total: number;
+  current: number;
+  pro: number;
+  am: number;
+};
+
+export type CountyRow = CountyCounts & {
+  code: string;
+  name: string;
+};
+
+export type PlayersByCounty = {
+  meta: {
+    generated: string;
+    source_fetched: string | null;
+    total_players: number;
+    current_members: number;
+    matched: number;
+    unmatched: number;
+    no_city: number;
+    coverage: number;
+  };
+  counties: CountyRow[];
+  unknown: CountyCounts;
+};
+
+/** Ferdig projiserte SVG-paths fra scripts/build-county-paths.mjs. */
+export type CountyPath = {
+  code: string;
+  name: string;
+  d: string;
+  centroid: [number, number];
+};
+
+export type CountyPaths = {
+  viewBox: string;
+  counties: CountyPath[];
+};

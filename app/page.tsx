@@ -18,9 +18,7 @@ export default function Home() {
         <div className="eyebrow">
           PDGA-statistikk · Norge · {firstYear}-{lastYear}
         </div>
-        <h1>
-          Norsk diskgolf år for år
-        </h1>
+        <h1>Norsk diskgolf år for år</h1>
 
         <GrowthChart agg={S.agg} />
         <StatStrip meta={S.meta} lead={S.top[0]} nEvents={nEvents} />
@@ -53,9 +51,15 @@ export default function Home() {
             <h3>Spillerdetaljer</h3>
             <p>Fullstendig oversikt over deltakelser per spiller per år.</p>
           </Link>
+          <Link href="/fylker" className="link-card">
+            <h3>Medlemmer per fylke</h3>
+            <p>Norgeskart over hvor norske PDGA-medlemmer kommer fra.</p>
+          </Link>
           <Link href="/milepaeler" className="link-card">
             <h3>Historiske milepæler</h3>
-            <p>Fra første norske medlem i 1987 til Elite Series og EM i 2025.</p>
+            <p>
+              Fra første norske medlem i 1987 til Elite Series og EM i 2025.
+            </p>
           </Link>
         </div>
       </section>

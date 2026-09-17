@@ -26,11 +26,15 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 
+# python
+__pycache__/
+
 # --- PDGA: raw source data must NOT be stored/committed ---
-# Only the aggregated data (data/summary.json, public/data/players.json) is allowed.
+# Only the aggregated data (data/*.json, public/data/players.json) is allowed.
 /raw/
 pdga_norge_alle.json
 events_norge_alle.json
+players_norge_alle.json
 pdga-auth.json
 data.json
 *.raw.json
