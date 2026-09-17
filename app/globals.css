@@ -457,6 +457,102 @@ td.cell.empty {
   @apply text-right;
 }
 
+/* ========== County map ========== */
+.county-layout {
+  @apply grid grid-cols-1 gap-6 items-start;
+}
+@media (min-width: 1024px) {
+  .county-layout {
+    grid-template-columns: minmax(0, 11fr) minmax(0, 9fr);
+  }
+}
+.county-section {
+  @apply pt-4;
+}
+.county-toggle {
+  @apply mb-7;
+}
+.county-card {
+  @apply mt-0 pt-4;
+}
+.county-map svg {
+  @apply max-h-[78vh] mx-auto;
+  width: auto;
+}
+.county-path {
+  stroke: var(--color-ink);
+  stroke-width: 1.2;
+  stroke-linejoin: round;
+  cursor: pointer;
+  transition: opacity 0.15s;
+  outline: none;
+}
+.county-path:hover,
+.county-path:focus-visible {
+  stroke: var(--color-text);
+  stroke-width: 1.6;
+}
+.county-path.selected {
+  stroke: var(--color-brass);
+  stroke-width: 2.4;
+}
+.county-map .chart-tooltip {
+  transform: translate(-50%, 12px);
+}
+.county-legend {
+  @apply justify-center mt-3 mb-1;
+}
+.county-map-col .sec-head,
+.county-table .sec-head {
+  @apply mb-2.5;
+}
+.county-stats {
+  table-layout: auto;
+}
+.county-stats th:first-child,
+.county-stats td:first-child {
+  @apply w-auto;
+}
+.county-stats td,
+.county-stats th {
+  @apply whitespace-nowrap;
+}
+@media (max-width: 480px) {
+  .county-stats thead th,
+  .county-stats tbody td,
+  .county-stats tfoot td {
+    @apply px-2.5;
+  }
+  /* pro/am finnes i tooltipen; her tar de mer plass enn de er verdt */
+  .county-stats .cls {
+    display: none;
+  }
+}
+.county-stats tbody td.yr-col {
+  @apply font-sans text-text;
+}
+.county-stats tbody tr {
+  cursor: pointer;
+}
+.county-stats tbody tr.unknown {
+  cursor: default;
+}
+.county-stats tbody tr.unknown td {
+  @apply text-muted2;
+}
+.county-stats tbody tr.selected {
+  @apply bg-[#16302f];
+}
+.county-stats tbody tr.selected td.yr-col {
+  @apply text-brass;
+}
+.county-stats tfoot td {
+  @apply font-mono text-[13px] px-4 py-2 text-text font-semibold border-t border-line2;
+}
+.county-stats tfoot td:not(:first-child) {
+  @apply text-right;
+}
+
 /* ========== Longevity tables ========== */
 .longevity-grid {
   @apply grid grid-cols-1 md:grid-cols-3 gap-5;

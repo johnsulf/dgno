@@ -11,6 +11,7 @@ const NAV_ITEMS = [
   { href: "/topp", label: "Mest aktive" },
   { href: "/veteraner", label: "Veteraner" },
   { href: "/heatmap", label: "Spillerdetaljer" },
+  { href: "/fylker", label: "Fylker" },
   { href: "/events", label: "Turneringer" },
   { href: "/milepaeler", label: "Historiske milepæler" },
 ];

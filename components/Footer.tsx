@@ -32,7 +32,8 @@ export default function Footer() {
         <b>Hvilke spillere er med?</b> Datasettet inneholder spillere med nåværende bosted
         Norge i spillerprofilen på PDGA. Dette betyr at utenlandske spillere
         bosatt i Norge vil være inkludert, mens norske spillere bosatt i
-        utlandet ikke vil være inkludert.
+        utlandet ikke vil være inkludert. Fylkeskartet bygger på by-feltet i
+        samme profil, se forklaringen på fylkessiden.
       </div>
       <div className="prov" style={{ borderTop: "none", paddingTop: 10 }}>
         <b>Forbehold.</b> Spillere kan ha deltatt i PDGA-turneringer som ikke

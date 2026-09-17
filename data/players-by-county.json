@@ -1,0 +1,140 @@
+{
+  "meta": {
+    "generated": "2026-09-16",
+    "source_fetched": "2026-09-16",
+    "total_players": 8201,
+    "current_members": 3765,
+    "matched": 8155,
+    "unmatched": 46,
+    "no_city": 32,
+    "coverage": 0.994
+  },
+  "counties": [
+    {
+      "code": "03",
+      "name": "Oslo",
+      "total": 981,
+      "current": 330,
+      "pro": 211,
+      "am": 770
+    },
+    {
+      "code": "11",
+      "name": "Rogaland",
+      "total": 651,
+      "current": 253,
+      "pro": 164,
+      "am": 487
+    },
+    {
+      "code": "15",
+      "name": "Møre og Romsdal",
+      "total": 478,
+      "current": 276,
+      "pro": 144,
+      "am": 334
+    },
+    {
+      "code": "18",
+      "name": "Nordland",
+      "total": 236,
+      "current": 131,
+      "pro": 42,
+      "am": 194
+    },
+    {
+      "code": "31",
+      "name": "Østfold",
+      "total": 420,
+      "current": 199,
+      "pro": 82,
+      "am": 338
+    },
+    {
+      "code": "32",
+      "name": "Akershus",
+      "total": 1042,
+      "current": 500,
+      "pro": 186,
+      "am": 856
+    },
+    {
+      "code": "33",
+      "name": "Buskerud",
+      "total": 370,
+      "current": 199,
+      "pro": 66,
+      "am": 304
+    },
+    {
+      "code": "34",
+      "name": "Innlandet",
+      "total": 888,
+      "current": 437,
+      "pro": 222,
+      "am": 666
+    },
+    {
+      "code": "39",
+      "name": "Vestfold",
+      "total": 558,
+      "current": 228,
+      "pro": 143,
+      "am": 415
+    },
+    {
+      "code": "40",
+      "name": "Telemark",
+      "total": 220,
+      "current": 108,
+      "pro": 88,
+      "am": 132
+    },
+    {
+      "code": "42",
+      "name": "Agder",
+      "total": 559,
+      "current": 184,
+      "pro": 212,
+      "am": 347
+    },
+    {
+      "code": "46",
+      "name": "Vestland",
+      "total": 564,
+      "current": 256,
+      "pro": 138,
+      "am": 425
+    },
+    {
+      "code": "50",
+      "name": "Trøndelag",
+      "total": 1022,
+      "current": 539,
+      "pro": 279,
+      "am": 743
+    },
+    {
+      "code": "55",
+      "name": "Troms",
+      "total": 136,
+      "current": 91,
+      "pro": 53,
+      "am": 83
+    },
+    {
+      "code": "56",
+      "name": "Finnmark",
+      "total": 30,
+      "current": 22,
+      "pro": 8,
+      "am": 22
+    }
+  ],
+  "unknown": {
+    "total": 46,
+    "current": 12,
+    "pro": 13,
+    "am": 33
+  }
+}
